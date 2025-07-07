@@ -1,0 +1,78 @@
+.navbar_name {
+  color: #DA7C25;
+  background: linear-gradient(90deg, #DA7C25, #b923e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold; /* bleu */
+}
+
+.navbar_separate {
+  color: #b923e1; /* violet simple */
+  font-weight: bold;
+}
+
+.navbar_prenom {
+  color: #DA7C25;
+  background: linear-gradient(90deg, #b923e1, #DA7C25);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    cursor: pointer;
+    align-content: center;
+    display: flex;
+
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.navbar_title{
+    margin-left: 20px;
+    flex: 1;
+}
+
+.navbar-center{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar_list{
+    cursor: pointer;
+    list-style: none;
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    gap: 30px;
+    font-size: 20px;
+}
+
+.navbar_end {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 20px;
+}
+
+.nav-connect {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  font-size: 20px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #DA7C25 0.36%, #b923e1 102.06%);
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover{
+    transform: scale(1.05);
+}

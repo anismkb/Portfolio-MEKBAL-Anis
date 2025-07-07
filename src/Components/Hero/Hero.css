@@ -1,0 +1,50 @@
+.hero{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-color: black; /* light gray background */
+    text-align: center;
+}
+
+.hero img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border : 3px solid #b923e1; /* violet simple */
+    margin-bottom: 20px;
+}
+
+.hero-button{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap:20px;
+}
+
+.hero-connect {
+    cursor: pointer;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #b923e1 102.06%); /* violet simple to orange simple */
+    padding: 10px 20px;
+    transition: 0.5s;
+}
+
+.hero-connect:hover{
+    transform: scale(1.05);
+}
+
+.hero-resume{
+    cursor: pointer;
+    border-radius: 50px;
+    border: white 1px solid;
+    padding: 10px 20px;
+    width: 120px;
+    transition: 0.5s;
+}
+
+.hero-resume:hover{
+    transform: scale(1.05);
+}
