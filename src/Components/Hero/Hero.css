@@ -1,5 +1,6 @@
 .hero{
-    padding-top: 100px;
+    padding-top: 200px;
+    box-sizing: border-box; /*inclut le padding*/
     display: flex;
     flex-direction: column;
     align-items: center;

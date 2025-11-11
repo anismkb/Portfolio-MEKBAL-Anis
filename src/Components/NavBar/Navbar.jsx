@@ -1,6 +1,5 @@
 import React from 'react'
 import './Navbar.css'
-// on a importer le css qui va avec le composant Navbar
 
 const Navbar = () => {
   return (
@@ -12,12 +11,12 @@ const Navbar = () => {
       </h1>
       <div className='navbar_center'>
         <ul className='navbar_list'>
-        <li>Home</li>
-        <li>About me</li>
-        <li>Skills</li>
-        <li>Projects</li>
-        <li>Education</li>
-      </ul>
+          <li>Home</li>
+          <li>About me</li>
+          <li>Skills</li>
+          <li>Projects</li>
+          <li>Education</li>
+        </ul>
       </div>
       <div className='navbar_end'>
         <div className='nav-connect'>Connect</div>
