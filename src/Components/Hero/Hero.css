@@ -18,6 +18,12 @@
     margin-bottom: 20px;
 }
 
+.hero-descript{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
 .hero-button{
     display: flex;
     align-items: center;
