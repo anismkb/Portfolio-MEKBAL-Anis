@@ -4,7 +4,7 @@ import ANIS from '../../assets/ANIS.jpg'
 
 const About = () => {
   return (
-    <div className='about'>
+    <div className='about' id="about">
         <div className="about-title">
             <p class="text-4xl"> About me </p>
         </div>

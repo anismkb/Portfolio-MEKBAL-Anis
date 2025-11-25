@@ -3,6 +3,11 @@ import './Navbar.css'
 
 const Navbar = () => {
   const [active, setActive] = React.useState('home');
+  const scrollToSection = (id) => {
+    setActive(id);
+    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+  }
+  
   return (
     <div className='navbar'>
       <h1 className='navbar_title'>
@@ -12,11 +17,11 @@ const Navbar = () => {
       </h1>
       <div className='navbar_center'>
         <ul className='navbar_list'>
-          <li className={active === 'home' ? 'active' : ''} onClick={() => setActive('home')}>Home</li>
-          <li className={active === 'about' ? 'active' : ''} onClick={() => setActive('about')}>About me</li>
-          <li className={active === 'skills' ? 'active' : ''} onClick={() => setActive('skills')}>Skills</li>
-          <li className={active === 'projects' ? 'active' : ''} onClick={() => setActive('projects')}>Projects</li>
-          <li className={active === 'educations' ? 'active' : ''} onClick={() => setActive('educations')}>Education</li>
+          <li className={active === 'home' ? 'active' : ''} onClick={() => scrollToSection('home')}>Home</li>
+          <li className={active === 'about' ? 'active' : ''} onClick={() => scrollToSection('about')}>About me</li>
+          <li className={active === 'skills' ? 'active' : ''} onClick={() => scrollToSection('skills')}>Skills</li>
+          <li className={active === 'projects' ? 'active' : ''} onClick={() => scrollToSection('projects')}>Projects</li>
+          <li className={active === 'educations' ? 'active' : ''} onClick={() => scrollToSection('educations')}>Education</li>
         </ul>
       </div>
       <div className='navbar_end'>
