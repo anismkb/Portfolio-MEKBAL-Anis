@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: center;
     color: white;
-    background-color: rgb(5, 5, 52);
+    background-color: #0a1124;
 }
 
 .about-title{
@@ -17,8 +17,8 @@
 .about-content {
     display: flex;
     flex-direction: row;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-left: clamp(10px, 5vw, 60px);
+    margin-right: clamp(10px, 5vw, 60px);
     gap: 40px;
 }
 
@@ -26,6 +26,9 @@
     width: 300px;
     height: 400px;
     object-fit: cover;
+    border-radius: 50px;
+    /*0 0 20px #DA7C25;*/
+    box-shadow: #DA7C25 0px 0px 10px 5px;
     margin-bottom: 20px;
 }
 
