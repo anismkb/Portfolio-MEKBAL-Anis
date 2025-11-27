@@ -5,7 +5,7 @@ export default function SkillCard({ title, items }) {
       <div className="items">
         {items.map((i, index) => (
           <div key={index} className="item">
-            <span className="icon">{i.icon}</span>
+            <img src={i.icon} alt={i.label} className="icon" />
             <span>{i.label}</span>
           </div>
         ))}
