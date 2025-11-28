@@ -25,9 +25,11 @@ import tailwind from "../../assets/tailwind-icon.png";
 import typescript from "../../assets/typescript.png";
 import pytest from "../../assets/pytest.svg";
 import junit from "../../assets/junit__.png";
+
+
 export default function App() {
   return (
-    <div className="skills" id="skills">
+    <div className="skills">
       <div className="title-section">
         <h1> Skills </h1>
         <p className="subtitle"> My areas of expertise </p>

@@ -1,13 +1,8 @@
 import React from 'react'
 import './Navbar.css'
 
-const Navbar = () => {
-  const [active, setActive] = React.useState('home');
-  const scrollToSection = (id) => {
-    setActive(id);
-    document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
-  }
-  
+const Navbar = ({ active, scrollToSection }) => {
+
   return (
     <div className='navbar'>
       <h1 className='navbar_title'>
@@ -15,6 +10,7 @@ const Navbar = () => {
         <span className='navbar_separate'>.</span>
         <span className='navbar_prenom'>Mekbal</span>
       </h1>
+
       <div className='navbar_center'>
         <ul className='navbar_list'>
           <li className={active === 'home' ? 'active' : ''} onClick={() => scrollToSection('home')}>Home</li>
@@ -24,6 +20,7 @@ const Navbar = () => {
           <li className={active === 'educations' ? 'active' : ''} onClick={() => scrollToSection('educations')}>Education</li>
         </ul>
       </div>
+
       <div className='navbar_end'>
         <div className='nav-connect'>Connect</div>
       </div>
