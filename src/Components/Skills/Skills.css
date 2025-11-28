@@ -61,7 +61,7 @@ body {
   box-shadow: 0 0 20px #DA7C25;
 }
 
-.card h2 {
+.card h2 {  
   color: #2fb4ff;
   margin-bottom: 15px;
 }
@@ -69,14 +69,21 @@ body {
 .items {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .item {
   display: flex;
   align-items: center;
+  padding: 5px;
   gap: 10px;
   font-size: 17px;
+}
+
+.item:hover {
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #816b57;
 }
 
 .icon {
