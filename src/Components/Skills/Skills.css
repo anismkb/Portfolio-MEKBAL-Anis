@@ -1,22 +1,4 @@
 
-/*
-.skills{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: rgb(5, 5, 52);
-
-}
-.title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.expertise{
-    display: grid;
-
-}*/
-
 body {
   background: #0a1124;
   color: white;
