@@ -1,10 +1,10 @@
 
 
 .title{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
 }
 
 .subtitle {
@@ -14,11 +14,62 @@
 }
 
 .blue-line {
-    width: 100px;
-    height: 3px;
-    background-color: #2fb4ff;
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
+  width: 100px;
+  height: 3px;
+  background-color: #2fb4ff;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.ProjectCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1000px; /* largeur max du container */
+  margin: 0 auto; /* centre horizontalement */
+  align-items: stretch;
+  align-self: center;
+  justify-items: center;
+}
+
+.card-skills {
+  background: #111a33;
+  width: 400px;
+  border-radius: 14px;
+  padding-bottom: 20px;
+}
+
+.card-skills .title {
+  margin-bottom: 0px;
+}
+
+.card-skills img {
+  border-radius: 14px 14px 0 0;
+  width: 400px;
+  height: 220px;
+  object-fit: cover;
+
+}
+
+.card-skills .description {
+  margin: 20px;
+}
+
+.card-skills .items {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+
+.card-skills .item{
+  display: flex;
+  background-color: rgb(99, 98, 98);
+  border-radius: 10px;
+}
+
+.card-skills .lien{
+  margin-left: 20px;
 }
