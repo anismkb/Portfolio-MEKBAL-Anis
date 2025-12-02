@@ -14,7 +14,7 @@ const Projet = () => {
       <div className="projectCards">
         <ProjectCard 
           image= {conveydyn}
-          lien={""}
+          lien={"https://play.google.com/store/apps/details?id=com.hutchinson.conveydyn_wizard&hl=fr"}
           title="Conveydyn Wizard"
           description="It is used to help with the sizing of a Conveydyn® belt for roller conveyors — whether straight or curved conveyors."
           items={[
@@ -26,7 +26,7 @@ const Projet = () => {
 
         <ProjectCard 
           image= {conveydyn}
-          lien={""}
+          lien={"https://github.com/anismkb/Food_delivery_Flutter_App"}
           title="Food Delivery App"
           description="Application mobile de food delivery incluant la navigation entre restaurants, le choix des repas, la gestion du panier et l’intégration d’un module de paiement. Conçue avec une architecture propre et une interface moderne."
           items={[
@@ -39,11 +39,22 @@ const Projet = () => {
         
         <ProjectCard 
           image= {conveydyn}
-          lien={""}
+          lien={"https://github.com/anismkb/TIC-TAC-TAO-Android-App"}
           title="TIC-TAC-TAO Game"
           description="Android Tic-Tac-Toe app featuring dynamic 3x3 and 4x4 board generation, optimized game logic, responsive UI, and smooth player interactions."
           items={[
             { technologie: "Java" },
+            { technologie: "Android Studio" },
+          ]}
+        />
+
+        <ProjectCard 
+          image= {conveydyn}
+          lien={"https://github.com/anismkb/Recipe_Android_App"}
+          title="Recipe App"
+          description="Android Tic-Tac-Toe app featuring dynamic 3x3 and 4x4 board generation, optimized game logic, responsive UI, and smooth player interactions."
+          items={[
+            { technologie: "Kotlin" },
             { technologie: "Android Studio" },
           ]}
         />
