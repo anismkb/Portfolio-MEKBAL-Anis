@@ -33,6 +33,7 @@
   justify-items: center;
 }
 
+
 .card-project {
   position: relative; /* nécessaire pour positionner l'overlay */
   background: #111a33;
