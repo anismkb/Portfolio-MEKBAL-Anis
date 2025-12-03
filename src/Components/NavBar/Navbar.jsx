@@ -17,7 +17,8 @@ const Navbar = ({ active, scrollToSection }) => {
           <li className={active === 'about' ? 'active' : ''} onClick={() => scrollToSection('about')}>About me</li>
           <li className={active === 'skills' ? 'active' : ''} onClick={() => scrollToSection('skills')}>Skills</li>
           <li className={active === 'projects' ? 'active' : ''} onClick={() => scrollToSection('projects')}>Projects</li>
-          <li className={active === 'educations' ? 'active' : ''} onClick={() => scrollToSection('educations')}>Education</li>
+          <li className={active === 'resume' ? 'active' : ''} onClick={() => scrollToSection('resume')}>Resume</li>
+          <li className={active === 'contact' ? 'active' : ''} onClick={() => scrollToSection('contact')}>Contact</li>
         </ul>
       </div>
 

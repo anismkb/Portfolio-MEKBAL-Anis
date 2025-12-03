@@ -1,29 +1,10 @@
-/*import React from 'react'
-import Navbar from './Components/NavBar/Navbar'
-import Hero from './Components/Hero/Hero'
-import About from './Components/About/About'
-import Skills from './Components/Skills/Skills'
-
-const App = () => {
-  return (
-    <div>
-      <Navbar/>
-      <Hero/>
-      <About/>
-      <Skills/>
-    </div>
-  )
-}
-
-export default App
-*/
-
 import { useState, useEffect } from "react";
 import Navbar from "./Components/NavBar/Navbar";
 import Hero from "./Components/Hero/Hero";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
+import Resume from "./Components/Resume/Resume";
 
 function App() {
 
@@ -36,7 +17,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "projects"];
+      const sections = ["home", "about", "skills", "projects", "resume"];
       let current = "home";
 
       for (let id of sections) {
@@ -65,6 +46,8 @@ function App() {
       <section id="about"><About /></section>
       <section id="skills"><Skills /></section>
       <sectionn id="projects"><Project /></sectionn>
+      <sectionn id="resume"><Resume /></sectionn>
+
     </>
   );
 }

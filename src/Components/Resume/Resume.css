@@ -1,0 +1,48 @@
+
+.content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1500px;
+    justify-items: center;
+    margin: 0% auto;
+}
+
+.titleSectionEducation .icon {
+  margin-left: 30px;
+  font-size: 30px;       /* taille de l’icône */
+  color: #b923e1;        /* ta couleur */
+}
+
+.titleSection .icon {
+  margin-left: 30px;
+  font-size: 25px;       /* taille de l’icône */
+  color: #DA7C25;        /* ta couleur */
+}
+
+.Exp-Card{
+    background-color: #111a33;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 30px;
+}
+
+.date{
+    color: aqua;
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background-color: #314887;
+    border-radius: 12px;
+    padding: 4px 10px;
+    display: inline-block;
+}
+
+.title-resume{
+    margin-bottom: 5px;
+}
+
+.company{
+    color: #DA7C25;
+    margin-bottom: 10px;
+}
