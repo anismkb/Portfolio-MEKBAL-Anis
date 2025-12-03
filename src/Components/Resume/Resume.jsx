@@ -47,7 +47,7 @@ const Resume = () => {
                     date={"2023 - 2025"}
                     title={" Master's in computer science, software for embedded systems "}
                     company={"Université de Bretagne Occidentale - Brest "}
-                    description={"Developed and designed responsive websites for small businesses, enhancing their online presence and user engagement through modern web technologies."}
+                    description={"Focused on developing high-reliability software for real-time and resource-constrained environments. Key areas included low-level programming (C/C++), IOT, mobile development and ensuring system security and performance optimization for critical applications."}
                     textColor= {" #b923e1"} 
                 />
                 <ExperienceCard

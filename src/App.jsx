@@ -5,6 +5,7 @@ import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
 import Resume from "./Components/Resume/Resume";
+import Contact from "./Components/Contact/contact";
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["home", "about", "skills", "projects", "resume"];
+      const sections = ["home", "about", "skills", "projects", "resume", "contact"];
       let current = "home";
 
       for (let id of sections) {
@@ -47,6 +48,7 @@ function App() {
       <section id="skills"><Skills /></section>
       <sectionn id="projects"><Project /></sectionn>
       <sectionn id="resume"><Resume /></sectionn>
+      <sectionn id="contact"><Contact /></sectionn>
 
     </>
   );
