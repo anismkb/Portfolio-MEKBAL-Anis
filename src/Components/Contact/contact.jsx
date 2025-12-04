@@ -1,5 +1,6 @@
 import React from "react";
 import "./contact.css";
+import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 
 const Contact = () => {
     return (
@@ -39,8 +40,35 @@ const Contact = () => {
                     </form>
                 </div>
                 <div className="references">
-                    <h2> Get In Touch </h2>
+                    <h2 className="titleRef"> Get In Touch </h2>
+                    <div className="Email-Item">
+                        <div className="icon-circle">
+                            <MdEmail size={24} />
+                        </div>
+                        <div className="email">
+                            <p> Email </p>
+                            <p> anismekbal2001@gmail.com</p>
+                        </div>
+                    </div>
+                    <div className="Phone-Item">
+                        <div className="icon-phone">
+                            <MdPhone size={24} />
+                        </div>
+                        <div className="phone">
+                            <p> Phone </p>
+                            <p> +33 6 02 56 41 67</p>
+                        </div>
+                    </div>
 
+                    <div className="Location-Item">
+                        <div className="icon-location">
+                            <MdLocationOn size={24} />
+                        </div>
+                        <div className="location">
+                            <p> Location </p>
+                            <p> Brest, France </p>
+                        </div>
+                    </div>
                 </div>
                 
             </div>

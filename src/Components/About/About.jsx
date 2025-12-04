@@ -5,8 +5,10 @@ import ANIS from '../../assets/ANIS.jpg'
 const About = () => {
   return (
     <div className='about'>
-        <div className="about-title">
+        <div className="title">
             <h1> About me </h1>
+            <p className="subtitle">Quick review</p>
+            <hr className="blue-line" />
         </div>
         <div className='about-content'>
             <img src={ANIS} alt=""/>
