@@ -63,9 +63,9 @@ body {
 }
 
 .item:hover {
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #816b57;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #816b57;
 }
 
 .icon {

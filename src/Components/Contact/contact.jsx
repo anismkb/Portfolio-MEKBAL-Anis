@@ -98,9 +98,9 @@ const Contact = () => {
                             Agrandir le plan
                         </a>
                         <MapContainer 
-                            center={[48.3904, -4.4869]} // Utilisez les coordonnées de Brest
+                            center={[48.3904, -4.4869]}
                             zoom={12} 
-                            scrollWheelZoom={true}
+                            scrollWheelZoom={false}
                             style={{ height: '300px', width: '100%' }}
                         >
                         <TileLayer

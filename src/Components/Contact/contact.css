@@ -1,5 +1,7 @@
 
-
+.contact{
+    padding-bottom: 30px;
+}
 .Formcontainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -10,6 +12,7 @@
     width: 100%;
     justify-items: stretch;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .references{
