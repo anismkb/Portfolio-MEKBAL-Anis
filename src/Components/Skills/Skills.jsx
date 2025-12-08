@@ -33,7 +33,7 @@ export default function App() {
       <div className="title-section">
         <h1> Skills </h1>
         <p className="subtitle"> My areas of expertise </p>
-        <hr class="blue-line" />
+        <hr className="blue-line" />
       </div>
 
       <div className="container">

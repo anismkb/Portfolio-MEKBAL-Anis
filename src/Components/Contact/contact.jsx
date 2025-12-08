@@ -1,6 +1,25 @@
 import React from "react";
 import "./contact.css";
-import { MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { MdSend, MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import 'leaflet/dist/leaflet.css';
+
+import L from 'leaflet';
+// Importez les images directement
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
+import shadow from 'leaflet/dist/images/marker-shadow.png';
+
+// Corrigez l'icône par défaut de Leaflet avec les imports
+let DefaultIcon = L.icon({
+    iconRetinaUrl: iconRetina,
+    iconUrl: icon,
+    shadowUrl: shadow,
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
+
+const googleMapsUrl = "https://www.google.fr/maps/place/Brest/@48.4084422,-4.4995852,12z/data=!3m1!4b1!4m6!3m5!1s0x4816bbe1d9925b93:0xc6488358179c30ab!8m2!3d48.3899275!4d-4.4855959!16zL20vMGZ3Zm0?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D";
 
 const Contact = () => {
     return (
@@ -8,7 +27,7 @@ const Contact = () => {
             <div className="title">
                 <h1> Contact </h1>
                 <p className="subtitle"> Feel free to reach out </p>
-                <hr class="blue-line" />
+                <hr className="blue-line" />
             </div>
             <div className="Formcontainer">
                 <div className="contactform">
@@ -34,7 +53,7 @@ const Contact = () => {
                                 </div>
                             </div>
                             
-                            <button type="submit"> Send Message </button>
+                            <button type="submit"> <MdSend size={18} />  Send Message </button>
                         </div>
                         
                     </form>
@@ -68,6 +87,30 @@ const Contact = () => {
                             <p> Location </p>
                             <p> Brest, France </p>
                         </div>
+                    </div>
+                    <div className="maps" style={{ height: '300px', width: '100%' }}>
+                        <a 
+                            href={googleMapsUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer" 
+                            className="map-expand-button"
+                        >
+                            Agrandir le plan
+                        </a>
+                        <MapContainer 
+                            center={[48.3904, -4.4869]} // Utilisez les coordonnées de Brest
+                            zoom={12} 
+                            scrollWheelZoom={true}
+                            style={{ height: '300px', width: '100%' }}
+                        >
+                        <TileLayer
+                            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+                        />
+                        <Marker position={[48.41, -4.4950]}>
+
+                        </Marker>
+                        </MapContainer>
                     </div>
                 </div>
                 

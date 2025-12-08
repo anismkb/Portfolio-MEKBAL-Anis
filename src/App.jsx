@@ -46,9 +46,9 @@ function App() {
       <section id="home"><Hero /></section>
       <section id="about"><About /></section>
       <section id="skills"><Skills /></section>
-      <sectionn id="projects"><Project /></sectionn>
-      <sectionn id="resume"><Resume /></sectionn>
-      <sectionn id="contact"><Contact /></sectionn>
+      <section id="projects"><Project /></section>
+      <section id="resume"><Resume /></section>
+      <section id="contact"><Contact /></section>
 
     </>
   );
