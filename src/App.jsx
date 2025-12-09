@@ -6,6 +6,7 @@ import Skills from "./Components/Skills/Skills";
 import Project from "./Components/Project/Project";
 import Resume from "./Components/Resume/Resume";
 import Contact from "./Components/Contact/contact";
+import Footer from "./Components/Footer/footer";
 
 function App() {
 
@@ -49,7 +50,7 @@ function App() {
       <section id="projects"><Project /></section>
       <section id="resume"><Resume /></section>
       <section id="contact"><Contact /></section>
-
+      <section id="contact"><Footer /></section>
     </>
   );
 }

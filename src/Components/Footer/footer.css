@@ -1,0 +1,14 @@
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #111a33;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.rights{
+    margin-bottom: 10px;
+}
