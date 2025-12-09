@@ -1,5 +1,5 @@
 .hero{
-    padding-top: 200px;
+    padding-top: 170px;
     box-sizing: border-box; /*inclut le padding*/
     display: flex;
     flex-direction: column;
@@ -41,28 +41,27 @@
 
 
 .icon-circle {
-    width: 30px;
-    height: 30px; 
+    width: 35px;
+    height: 35px; 
+    border-radius: 50%;
+    border-color: white;
     display: flex;
     justify-content: center; 
     align-items: center;
-    
+    background-color: #111a33;
     text-decoration: none; 
 }
 
-/* Le style de l'icône (le i) à l'intérieur */
 .icon-circle i {
-    /* Couleur de l'icône */
     color: #ffffff; 
-    /* Taille de l'icône */
     font-size: 18px; 
-    /* Assurez-vous que l'icône est bien un bloc */
+    /* couleur de l'icon */
     display: block;
 }
 
-/* Effet au survol (optionnel) */
+
 .icon-circle:hover {
-    background-color: #cc823c; /* Changement de couleur au survol */
+    background-color: #cc823c; 
 }
 
 .hero img {
@@ -70,8 +69,8 @@
     height: 250px;
     object-fit: cover;
     border-radius: 50%;
-    border : 3px solid #DA7C25; /* violet simple */
     margin-bottom: 20px;
+    margin-top: 10px;
 }
 
 .hero-descript{

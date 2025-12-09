@@ -5,7 +5,9 @@ const Navbar = ({ active, scrollToSection }) => {
 
   return (
     <div className='navbar'>
-      <h1 className='navbar_title'>
+      <h1 className='navbar_title' 
+        onClick={() => scrollToSection('home')}
+      >
         <span className='navbar_name'>Anis</span>
         <span className='navbar_separate'>.</span>
         <span className='navbar_prenom'>Mekbal</span>

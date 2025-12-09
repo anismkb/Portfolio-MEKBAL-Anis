@@ -5,7 +5,7 @@ export default function ExperienceCard({date, title, company, description, textC
             <p className="date" > {date} </p>
             <h3 className="title-resume"> {title} </h3>
             <p className="company" style={{ color: textColor }}> {company} </p>
-            <p> {description} </p>
+            <p className="taches"> {description} </p>
         </div>
     )
 }

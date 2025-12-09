@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
-    max-width: 1500px;
+    max-width: 1300px;
     justify-items: center;
     margin: 0% auto;
 }
@@ -47,4 +47,9 @@
 .company{
     color: #DA7C25;
     margin-bottom: 10px;
+}
+
+.taches{
+    line-height: 1.2;
+    font-size: 15px;
 }

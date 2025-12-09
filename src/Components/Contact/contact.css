@@ -63,7 +63,7 @@
     gap: 15px;
 }
 
-.icon-circle, .icon-phone, .icon-location{
+.icon-email, .icon-phone, .icon-location{
     display: flex;
     margin-bottom: 20px;
     padding: 5px 5px;

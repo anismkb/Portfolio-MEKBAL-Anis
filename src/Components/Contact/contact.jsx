@@ -60,7 +60,7 @@ const Contact = () => {
                 <div className="references">
                     <h2 className="titleRef"> Get In Touch </h2>
                     <div className="Email-Item">
-                        <div className="icon-circle">
+                        <div className="icon-email">
                             <MdEmail size={24} />
                         </div>
                         <div className="email">
