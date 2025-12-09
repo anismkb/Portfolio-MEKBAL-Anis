@@ -29,9 +29,7 @@ const Hero = () => {
           <a href="https://www.linkedin.com/in/anis-mekbal" class="icon-circle" target="_blank">
               <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="#" class="icon-circle" target="_blank">
-              <i class="fas fa-envelope"></i>
-          </a>
+          <a href="mailto:anismekbal2001@gmail.com" class="icon-circle"><i class="fas fa-envelope"></i></a>
       </div>
         <div 
           className='scroll-down'
