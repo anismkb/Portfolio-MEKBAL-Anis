@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0px;
-    background-color:rgb(9, 9, 80);
+    background-color: rgba(0, 0, 0, 0.95); /* noir avec 70% d'opacité */
 }
 
 .navbar_title{

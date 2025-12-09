@@ -21,7 +21,7 @@ function App() {
     const handleScroll = () => {
       const sections = ["home", "about", "skills", "projects", "resume", "contact"];
       
-      const offset = 300; // Par exemple 100 pixels
+      const offset = 300;
 
       let current = "home"; 
 

@@ -9,6 +9,62 @@
     text-align: center;
 }
 
+.hello{
+    color: #b923e1;
+    font-size: 20px;
+}
+
+.full{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 60px;
+}
+
+.job{
+    color: #DA7C25;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.presentation{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    max-width: 550px;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+
+.icon-circle {
+    width: 30px;
+    height: 30px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+    text-decoration: none; 
+}
+
+/* Le style de l'icône (le i) à l'intérieur */
+.icon-circle i {
+    /* Couleur de l'icône */
+    color: #ffffff; 
+    /* Taille de l'icône */
+    font-size: 18px; 
+    /* Assurez-vous que l'icône est bien un bloc */
+    display: block;
+}
+
+/* Effet au survol (optionnel) */
+.icon-circle:hover {
+    background-color: #cc823c; /* Changement de couleur au survol */
+}
+
 .hero img {
     width: 250px;
     height: 250px;
@@ -27,7 +83,8 @@
 .hero-button{
     display: flex;
     align-items: center;
-    margin: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
     gap:20px;
 }
 

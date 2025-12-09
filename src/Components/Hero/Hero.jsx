@@ -6,12 +6,33 @@ import scroll from '../../assets/scroll.jpg'
 const Hero = () => {
   return (
     <div className='hero'>
-        <img className='profile' src={ANIS} alt=""/>
-        <h1 className='hero-descript'> I'm MEKBAL Anis, Full Stack Developer</h1>
+        <p className='hello'> Hello, I'm</p>
+        <h1 className='full'> Anis Mekbal </h1>
+        <h3 className='job'> Full Stack Developer </h3>
+        <p className='presentation'> Bringing web and mobile projects to life with optimized performance and intuitive design. </p>
         <div className='hero-button'>
-            <div className='hero-connect'>Contact me</div>
-            <div className='hero-resume'>My resume</div>
+            <div className='hero-connect'
+             onClick={() => document.getElementById('contact').scrollIntoView({behavior: 'smooth'})}
+            >
+              Contact me
+            </div>
+            <div className='hero-resume'
+              onClick={() => document.getElementById('resume').scrollIntoView({behavior: 'smooth'})}
+            >
+              My resume
+            </div>
         </div>
+        <div class="social-icons">
+          <a href="https://github.com/anismkb" class="icon-circle">
+              <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/anis-mekbal" class="icon-circle">
+              <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="#" class="icon-circle">
+              <i class="fas fa-envelope"></i>
+          </a>
+      </div>
         <div 
           className='scroll-down'
           onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
