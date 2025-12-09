@@ -14,25 +14,27 @@ function App() {
 
   const scrollToSection = (id) => {
     setActive(id);
-    document.getElementById(id).scrollIntoView({ behavior: "smooth" });
+    document.getElementById(id).scrollIntoView({ behavior: "smooth", block: "start"});
   };
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = ["home", "about", "skills", "projects", "resume", "contact"];
-      let current = "home";
+      
+      const offset = 300; // Par exemple 100 pixels
+
+      let current = "home"; 
 
       for (let id of sections) {
         const section = document.getElementById(id);
         if (section) {
           const rect = section.getBoundingClientRect();
-          if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          
+          if (rect.top <= offset) {
             current = id;
-            break;
-          }
+          } 
         }
       }
-
       setActive(current);
     };
 
@@ -50,7 +52,7 @@ function App() {
       <section id="projects"><Project /></section>
       <section id="resume"><Resume /></section>
       <section id="contact"><Contact /></section>
-      <section id="contact"><Footer /></section>
+      <section id="footer"><Footer /></section>
     </>
   );
 }

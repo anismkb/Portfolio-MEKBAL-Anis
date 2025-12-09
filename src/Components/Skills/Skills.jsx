@@ -30,7 +30,7 @@ import junit from "../../assets/junit__.png";
 export default function App() {
   return (
     <div className="skills">
-      <div className="title-section">
+      <div className="title">
         <h1> Skills </h1>
         <p className="subtitle"> My areas of expertise </p>
         <hr className="blue-line" />
