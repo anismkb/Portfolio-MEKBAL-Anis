@@ -38,7 +38,6 @@ const Contact = () => {
                                 <div className="input">
                                     <input type="text" id="name" name="name" placeholder="Your Name" required />
                                 </div>
-                                
                             </div>
                             <div className="email">
                                 <label htmlFor="email"> Email </label>
