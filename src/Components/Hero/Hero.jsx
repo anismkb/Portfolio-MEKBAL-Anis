@@ -35,8 +35,8 @@ const Hero = () => {
           className='scroll-down'
           onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
         >
-          <p>Scroll down </p>
-          <img className='scroll-image' src={scroll} alt=""/> 
+          <p className='label'>Scroll Down </p>
+          <i className='fa-solid fa-arrow-down'></i>
         </div>
 
     </div>

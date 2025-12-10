@@ -127,6 +127,15 @@
     animation: bounce 3s infinite;
 }
 
+.scroll-down .label{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.scroll-down:hover {
+    color: #DA7C25; 
+}
+
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
