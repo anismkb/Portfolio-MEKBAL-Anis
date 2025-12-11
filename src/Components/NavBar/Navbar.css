@@ -90,3 +90,66 @@
 .nav-connect:hover{
     transform: scale(1.05);
 }
+
+/* --- NOUVEAU : Style pour le bouton hamburger (caché par défaut) --- */
+.navbar_toggle {
+    display: none; /* Cache l'icône sur les grands écrans (Desktop) */
+    color: white;
+    font-size: 28px;
+    margin-right: 20px;
+    z-index: 1001; /* Assurez-vous qu'il est au-dessus de tout */
+    cursor: pointer;
+}
+
+
+/* --- Media Query pour les tablettes et mobiles (Exemple : < 900px) --- */
+
+@media (max-width: 900px) {
+    
+    /* 1. Afficher le bouton hamburger */
+    .navbar_toggle {
+        display: flex; 
+        order: 3;
+    }
+
+    /* 2. Masquer les éléments de navigation et de fin par défaut */
+    .navbar_center{
+        display: none;
+        
+        /* Styles pour positionner le menu lorsqu'il est ouvert */
+        flex-direction: column;
+        position: absolute;
+        width: 100%;
+        top: 70px; /* Commence juste en dessous de la barre de navigation */
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.98); /* Fond presque opaque */
+        padding: 20px 0;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+        z-index: 1000;
+    }
+
+    /* 3. Afficher les éléments lorsque la classe 'open' est présente */
+    .navbar_center.open,
+    .navbar_end.open {
+        display: flex;
+    }
+    
+    /* 4. Ajuster la liste pour un affichage vertical sur mobile */
+    .navbar_list {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        padding: 0;
+    }
+    
+    /* 5. Centrer le titre et le bouton sur la navbar principale */
+    .navbar {
+        justify-content: space-between; /* Pour que le titre et l'icône soient aux extrémités */
+    }
+
+    /* Assurez-vous que le bouton Connect ne soit pas trop large */
+    .navbar_end {
+        /* Comme il est séparé, il doit être aligné au centre du menu */
+        justify-content: right;
+    }
+}
