@@ -61,6 +61,7 @@ const Projet = () => {
           description="Android Tic-Tac-Toe app featuring dynamic 3x3 and 4x4 board generation, optimized game logic, responsive UI, and smooth player interactions."
           items={[
             { technologie: "Kotlin" },
+            { technologie: "API Rest" },
             { technologie: "Android Studio" },
           ]}
         />

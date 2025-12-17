@@ -1,6 +1,7 @@
 
 .contact{
-    padding-bottom: 30px;
+    /* Haut (0), Droite (30px), Bas (30px), Gauche (30px) */
+    padding: 0 30px 30px;
 }
 .Formcontainer{
     display: grid;

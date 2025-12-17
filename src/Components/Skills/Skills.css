@@ -16,7 +16,6 @@ body {
   font-weight: 300; /* optionnel : style plus élégant */
 }
 
-
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
