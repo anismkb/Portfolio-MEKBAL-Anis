@@ -88,13 +88,13 @@ const Contact = () => {
                             <div className="message">
                                 <label htmlFor="message"> Message </label>
                                 <div className="input">
-                                    <textarea id="message" name="message" placeholder="Your Massage" rows="5" required></textarea>
+                                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
                                 </div>
                             </div>
                             
                             {/* Désactiver le bouton pendant l'envoi */}
                             <button type="submit" disabled={status === "Sending..."}> 
-                                <MdSend size={18} /> 
+                                <MdSend size={18} style={{ marginRight: "8px" }} /> 
                                 {status === "Sending..." ? "Sending..." : "Send Message"}
                             </button>
                             

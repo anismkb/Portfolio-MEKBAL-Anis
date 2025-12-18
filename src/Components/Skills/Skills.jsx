@@ -72,7 +72,7 @@ export default function App() {
             items={[
             { label: "Flutter", icon: flutter },
             { label: "Kotlin", icon: kotlin },
-            { label: "Swift", icon: swift },
+            /*{ label: "Swift", icon: swift },*/
             ]}
         />
         <SkillCard

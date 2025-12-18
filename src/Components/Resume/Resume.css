@@ -22,11 +22,42 @@
   color: #DA7C25;        /* ta couleur */
 }
 
+/* Le conteneur qui crée la ligne verticale */
+.timeline-container {
+    position: relative;
+    padding-left: 0px; /* Espace pour la ligne */
+    margin-left: 20px;
+    border-left: 2px solid #DA7C25; /* La ligne verticale bleue */
+}
+
+.Education .timeline-container {
+    border-left: 2px solid #b923e1; /* La ligne verticale pour l'éducation */
+}
+
 .Exp-Card{
+    position: relative;
     background-color: #111a33;
     border-radius: 7px;
     padding: 20px;
     margin: 30px;
+}
+
+.Exp-Card::before {
+    content: "";
+    position: absolute;
+    left: -41px; /* Ajuste selon l'épaisseur de ta bordure pour centrer la boule */
+    top: 0px;   /* Aligne la boule avec le titre de la carte */
+    width: 16px;
+    height: 16px;
+    background-color: #DA7C25; /* Couleur de la boule (comme tes dates) */
+    border: 3px solid #111a33; /* Contour pour détacher la boule de la ligne */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Optionnel : Changer la couleur de la boule pour la section Education */
+.Education .Exp-Card::before {
+    background-color: #b923e1;
 }
 
 .date{
