@@ -52,7 +52,7 @@ export default function App() {
             title="Backend"
             items={[
             { label: "Django", icon: django },
-            { label: "ASP.Net", icon: asp },
+            { label: ".Net Core", icon: asp },
             { label: "PHP", icon: php },
             ]}
         />

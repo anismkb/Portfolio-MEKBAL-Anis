@@ -42,7 +42,6 @@ const Projet = () => {
           ]}
         />
 
-        
         <ProjectCard 
           image= {jeux_xo}
           lien={"https://github.com/anismkb/TIC-TAC-TAO-Android-App"}

@@ -25,7 +25,6 @@
 /* Le conteneur qui crée la ligne verticale */
 .timeline-container {
     position: relative;
-    padding-left: 0px; /* Espace pour la ligne */
     margin-left: 20px;
     border-left: 2px solid #DA7C25; /* La ligne verticale bleue */
 }
@@ -40,6 +39,15 @@
     border-radius: 7px;
     padding: 20px;
     margin: 30px;
+}
+
+.Exp-Card:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 10px -8px #DA7C25;
+}
+
+.Education .Exp-Card:hover {
+  box-shadow: 0 10px 10px -8px #b923e1;
 }
 
 .Exp-Card::before {

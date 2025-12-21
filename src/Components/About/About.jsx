@@ -1,6 +1,7 @@
 import React from "react";
 import "./About.css";
 import ANIS from '../../assets/ANIS.jpg'
+import { FaLaptopCode, FaMobileAlt, FaDatabase, FaSitemap} from "react-icons/fa";
 
 const About = () => {
   return (
@@ -14,8 +15,22 @@ const About = () => {
             <img src={ANIS} alt=""/>
             <div className="about-right">
                 <div className="about-desc">
-                    <p>I'm a software engineer with a Master’s degree in Software Engineering. Passionate about web, mobile, and software development, I enjoy designing high-performance and user-friendly solutions, from intuitive front-end interfaces to robust backend architectures. </p>
-                    <p>Curious, adaptable, and highly motivated, I’m always eager to learn, take on new challenges, and contribute to innovative projects that combine technical excellence and creativity.</p>
+                    <p> Anis MEKBAL, a passionate <strong>Software Engineer</strong> and <strong>Full-Stack Developer </strong>  with a Master’s degree. I blend academic rigor with technical expertise to build high-performance, end-to-end solutions. From intuitive UIs to robust backend architectures, I specialize in mobile, backend and complex systems. Driven by curiosity, I’m always seeking the next tech challenge to innovate and grow.</p>
+                </div>
+                {/* Section des Icônes d'expertise */}
+                <div className="expertise-icons">
+                    <div className="icon-item">
+                        <FaMobileAlt className="icon" size={80}/>
+                        <span> Mobile</span>
+                    </div>
+                    <div className="icon-item">
+                        <FaDatabase className="icon" size={80}/>
+                        <span> Backend</span>
+                    </div>
+                    <div className="icon-item">
+                        <FaSitemap className="icon" size={80} />
+                        <span>Systems Complexes</span>
+                    </div>
                 </div>
             </div>
         </div>

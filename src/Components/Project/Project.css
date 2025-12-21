@@ -62,6 +62,11 @@
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 10px 10px -10px black;
+}
+
+.card-project:hover {
+  box-shadow: 0 12px 10px -10px #DA7C25;
 }
 
 .card-project:hover img {
