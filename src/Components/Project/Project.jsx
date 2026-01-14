@@ -5,6 +5,7 @@ import conveydyn from '../../assets/convey.jpg';
 import conveydyn_app from '../../assets/conveydyn.png'
 import delevery from '../../assets/delevery_app.png'
 import jeux_xo from '../../assets/jeux_xo.png'
+import godot from '../../assets/godot.png'
 
 
 const Projet = () => {
@@ -52,7 +53,7 @@ const Projet = () => {
             { technologie: "Android Studio" },
           ]}
         />
-
+        
         <ProjectCard 
           image= {conveydyn}
           lien={"https://github.com/anismkb/Recipe_Android_App"}
@@ -62,6 +63,16 @@ const Projet = () => {
             { technologie: "Kotlin" },
             { technologie: "API Rest" },
             { technologie: "Android Studio" },
+          ]}
+        />
+
+        <ProjectCard 
+          image= {godot}
+          lien={"https://github.com/anismkb/Recipe_Android_App"}
+          title="Godot 2D Platformer"
+          description="Jeu de plateforme 2D avec système de détection de proximité. L'ennemi suit le joueur lorsqu'il entre dans sa zone de détection. Mouvement fluide avec animations directionnelles."
+          items={[
+            { technologie: "Godot" },
           ]}
         />
       </div>

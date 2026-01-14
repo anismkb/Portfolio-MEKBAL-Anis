@@ -14,7 +14,7 @@ const Resume = () => {
         </div>
         <div className="content">
             <div className="Experience">
-                <h1 className="titleSection">
+                <h1 className="titleSectionExperience">
                     <FaBriefcase className="icon" /> Experience
                 </h1>
                 <div className="timeline-container">
