@@ -39,7 +39,7 @@ body {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 20px #DA7C25;
+  box-shadow: 0 0 15px #4566c0;
 }
 
 .card h2 {  
@@ -64,7 +64,7 @@ body {
 .item:hover {
   padding: 5px;
   border-radius: 10px;
-  background-color: #816b57;
+  background-color: #6180d6;
 }
 
 .icon {

@@ -21,7 +21,7 @@
 
 .navbar_name {
   color: #DA7C25;
-  background: linear-gradient(90deg, #DA7C25, #b923e1);
+  background: linear-gradient(90deg, #4566c0, #b923e1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold; /* bleu */
@@ -34,7 +34,7 @@
 
 .navbar_prenom {
   color: #DA7C25;
-  background: linear-gradient(90deg, #b923e1, #DA7C25);
+  background: linear-gradient(90deg, #b923e1, #4566c0);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
@@ -58,12 +58,12 @@
 }
 
 .navbar_list li:hover {
-    color: #DA7C25;
+    color: #4566c0;
     transition: 0.3s;
 }
 
 .navbar_list li.active {
-    color: #DA7C25;
+    color: #4566c0;
 }
 
 .navbar_end {
@@ -81,7 +81,7 @@
   padding: 5px 20px;
   font-size: 20px;
   border-radius: 50px;
-  background: linear-gradient(267deg, #DA7C25 0.36%, #b923e1 102.06%);
+  background: linear-gradient(267deg, #764ba2 0.36%, #111a33 102.06%);
   color: white;
   cursor: pointer;
   transition: 0.5s;

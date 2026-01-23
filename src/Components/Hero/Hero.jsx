@@ -23,13 +23,13 @@ const Hero = () => {
             </div>
         </div>
         <div class="social-icons">
-          <a href="https://github.com/anismkb" class="icon-circle" target="_blank">
+          <a href="https://github.com/anismkb" className="icon-circle" target="_blank">
               <i class="fa-brands fa-github"></i>
           </a>
-          <a href="https://www.linkedin.com/in/anis-mekbal" class="icon-circle" target="_blank">
+          <a href="https://www.linkedin.com/in/anis-mekbal" className="icon-circle" target="_blank">
               <i class="fab fa-linkedin-in"></i>
           </a>
-          <a href="mailto:anismekbal2001@gmail.com" class="icon-circle"><i class="fas fa-envelope"></i></a>
+          <a href="mailto:anismekbal2001@gmail.com" className="icon-circle"><i class="fas fa-envelope"></i></a>
       </div>
         <div 
           className='scroll-down'
