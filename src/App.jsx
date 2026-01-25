@@ -7,7 +7,8 @@ import Project from "./Components/Project/Project";
 import Resume from "./Components/Resume/Resume";
 import Contact from "./Components/Contact/contact";
 import Footer from "./Components/Footer/footer";
-
+import {ThemeProvider} from "./Theme/ThemeContext";
+import ThemeToggle from "./Theme/ThemeToggle";
 function App() {
 
   const [active, setActive] = useState("home");
@@ -44,15 +45,17 @@ function App() {
 
   return (
     <>
-      <Navbar active={active} scrollToSection={scrollToSection} />
-
-      <section id="home"><Hero /></section>
-      <section id="about"><About /></section>
-      <section id="skills"><Skills /></section>
-      <section id="projects"><Project /></section>
-      <section id="resume"><Resume /></section>
-      <section id="contact"><Contact /></section>
-      <section id="footer"><Footer /></section>
+      <ThemeProvider>
+        <Navbar active={active} scrollToSection={scrollToSection} />
+        <ThemeToggle />
+        <section id="home"><Hero /></section>
+        <section id="about"><About /></section>
+        <section id="skills"><Skills /></section>
+        <section id="projects"><Project /></section>
+        <section id="resume"><Resume /></section>
+        <section id="contact"><Contact /></section>
+        <section id="footer"><Footer /></section>
+      </ThemeProvider>
     </>
   );
 }

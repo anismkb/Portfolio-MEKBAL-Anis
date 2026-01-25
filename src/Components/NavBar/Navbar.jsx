@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { FaBars, FaTimes } from 'react-icons/fa'
 import './Navbar.css'
+import ThemeToggle from '../../Theme/ThemeToggle';
 
 const Navbar = ({ active, scrollToSection }) => {
     // État pour gérer l'ouverture/fermeture du menu mobile
@@ -43,10 +44,11 @@ const Navbar = ({ active, scrollToSection }) => {
                 </ul>
             </div>
 
-            {/* 5. Le bouton 'Connect' doit aussi apparaître/disparaître avec le menu */}
             <div className={`navbar_end ${isMenuOpen ? 'open' : ''}`}>
-                <div className='nav-connect'>Connect</div>
+                 <div className='nav-connect'><ThemeToggle /></div>
+                
             </div>
+
         </div>
     )
 }

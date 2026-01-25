@@ -86,7 +86,6 @@ export default function App() {
         <SkillCard
             title="Tools & Others"
             items={[
-            { label: "Figma", icon: figma },
             { label: "Postman", icon: postman },
             { label: "Docker", icon: docker },
             { label: "Git", icon: git },

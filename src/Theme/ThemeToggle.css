@@ -1,0 +1,41 @@
+/* src/components/ThemeToggle.css */
+.theme-toggle {
+  
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  
+  padding: 10px 16px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  
+  /* Thème clair */
+  background: #f0f0f0;
+  color: #333;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.theme-toggle:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.theme-icon {
+  font-size: 18px;
+}
+
+/* Thème sombre */
+[data-theme="dark"] .theme-toggle {
+  background: #333;
+  color: #f0f0f0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  background: #444;
+}

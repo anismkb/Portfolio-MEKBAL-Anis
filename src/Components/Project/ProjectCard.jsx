@@ -11,7 +11,7 @@ export default function ProjectCard({ image, lien, title, description, items }) 
         </a>
       </div>
 
-      <div className="title">
+      <div className="title-item">
         <br/>
         <h2>{title}</h2>
       </div>

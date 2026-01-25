@@ -30,7 +30,7 @@ const Hero = () => {
               <i class="fab fa-linkedin-in"></i>
           </a>
           <a href="mailto:anismekbal2001@gmail.com" className="icon-circle"><i class="fas fa-envelope"></i></a>
-      </div>
+        </div>
         <div 
           className='scroll-down'
           onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
