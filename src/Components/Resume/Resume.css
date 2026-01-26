@@ -13,23 +13,27 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    color: var(--text-primary);
+    font-size: 23px;
 }
 
 .titleSectionExperience {
     display: flex;
     align-items: center;
     gap: 10px; 
+    color: var(--text-primary);
+    font-size: 23px;
 }
 
 .titleSectionEducation .icon {
   margin-left: 30px;
-  font-size: 30px;       /* taille de l’icône */
+  font-size: 27px;       /* taille de l’icône */
   color: #b923e1;        /* ta couleur */
 }
 
 .titleSectionExperience .icon {
   margin-left: 30px;
-  font-size: 30px;       /* taille de l’icône */
+  font-size: 23px;       /* taille de l’icône */
   color: #DA7C25;        /* ta couleur */
 }
 
@@ -46,7 +50,7 @@
 
 .Exp-Card{
     position: relative;
-    background-color: #111a33;
+    background-color: var(--bg-tertiary);
     border-radius: 7px;
     padding: 20px;
     margin: 30px;
@@ -69,7 +73,7 @@
     width: 16px;
     height: 16px;
     background-color: #DA7C25; /* Couleur de la boule (comme tes dates) */
-    border: 3px solid #111a33; /* Contour pour détacher la boule de la ligne */
+    border: 3px solid var(--bg-tertiary); /* Contour pour détacher la boule de la ligne */
     border-radius: 50%;
     z-index: 1;
 }
@@ -84,7 +88,7 @@
     font-weight: bold;
     font-size: 15px;
     margin-bottom: 10px;
-    background-color: #314887;
+    background-color: var(--bg-year);
     border-radius: 12px;
     padding: 4px 10px;
     display: inline-block;
@@ -92,6 +96,7 @@
 
 .title-resume{
     margin-bottom: 5px;
+    color: var(--text-secondary);
 }
 
 .company{
@@ -102,4 +107,5 @@
 .taches{
     line-height: 1.2;
     font-size: 15px;
+    color: var(--text-secondary);
 }

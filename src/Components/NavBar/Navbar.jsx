@@ -36,7 +36,7 @@ const Navbar = ({ active, scrollToSection }) => {
                 <ul className='navbar_list'>
                     {/* Utiliser handleLinkClick pour fermer le menu après le clic */}
                     <li className={active === 'home' ? 'active' : ''} onClick={() => handleLinkClick('home')}>Home</li>
-                    <li className={active === 'about' ? 'active' : ''} onClick={() => handleLinkClick('about')}>About me</li>
+                    <li className={active === 'about' ? 'active' : ''} onClick={() => handleLinkClick('about')}>About</li>
                     <li className={active === 'skills' ? 'active' : ''} onClick={() => handleLinkClick('skills')}>Skills</li>
                     <li className={active === 'projects' ? 'active' : ''} onClick={() => handleLinkClick('projects')}>Projects</li>
                     <li className={active === 'resume' ? 'active' : ''} onClick={() => handleLinkClick('resume')}>Resume</li>
@@ -46,7 +46,6 @@ const Navbar = ({ active, scrollToSection }) => {
 
             <div className={`navbar_end ${isMenuOpen ? 'open' : ''}`}>
                  <div className='nav-connect'><ThemeToggle /></div>
-                
             </div>
 
         </div>

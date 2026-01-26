@@ -1,4 +1,5 @@
 
+
 .about-content {
     display: grid;
     /* 1. On définit la structure : une colonne de 1 part et une de 2 parts */
@@ -32,7 +33,7 @@
 }
 
 .about-desc p {
-  background-color: #111a33;
+  background-color: #a8a9ac;
   margin-bottom: 10px; /* espace de 10px entre chaque paragraphe */
   padding: 15px;
   border-radius: 7px;

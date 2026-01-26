@@ -11,6 +11,9 @@
   color: var(--text-primary);
 }
 
+.title-item{
+  text-align: center;
+}
 .subtitle {
   font-size: 20px; /* change la taille comme tu veux */
   font-weight: 300; /* optionnel : style plus élégant */
@@ -55,7 +58,8 @@
 
 .card-project {
   position: relative;
-  background: #111a33;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
   width: 100%; 
   max-width: 400px; /* Elle ne dépassera jamais cette taille */
   border-radius: 14px;
@@ -129,7 +133,7 @@
   display: flex;
   font-size: 13px;
   padding: 7px;
-  background-color: rgb(81, 80, 80);
+  background-color: var(--bg-techno);
   border-radius: 7px;
 }
 

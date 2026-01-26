@@ -27,7 +27,7 @@ import pytest from "../../assets/pytest.svg";
 import junit from "../../assets/junit__.png";
 
 
-export default function App() {
+const Skills = () => {
   return (
     <div className="skills">
       <div className="title">
@@ -98,4 +98,6 @@ export default function App() {
     </div>
   );
 }
+
+export default Skills;
 
