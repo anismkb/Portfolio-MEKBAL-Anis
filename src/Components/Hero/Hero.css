@@ -10,7 +10,7 @@
 }
 
 .hello{
-    color: #764ba2;
+    color: #a364e1;
     font-size: 20px;
 }
 
@@ -22,7 +22,7 @@
 }
 
 .job{
-    color: #4566c0;
+    color: #5a85f9;
     font-size: 25px;
     margin-bottom: 20px;
 }
@@ -62,7 +62,7 @@
 
 
 .icon-circle:hover {
-    background-color: #4566c0;
+    background-color: #5a85f9;
 }
 
 .hero img {

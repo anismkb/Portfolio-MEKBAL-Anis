@@ -34,14 +34,14 @@
 .titleSectionExperience .icon {
   margin-left: 30px;
   font-size: 23px;       /* taille de l’icône */
-  color: #DA7C25;        /* ta couleur */
+  color: #5a85f9;       /* ta couleur */
 }
 
 /* Le conteneur qui crée la ligne verticale */
 .timeline-container {
     position: relative;
     margin-left: 20px;
-    border-left: 2px solid #DA7C25; /* La ligne verticale bleue */
+    border-left: 2px solid #5a85f9; /* La ligne verticale bleue */
 }
 
 .Education .timeline-container {
@@ -58,7 +58,7 @@
 
 .Exp-Card:hover {
   transform: translateY(-1px);
-  box-shadow: 0 10px 10px -8px #DA7C25;
+  box-shadow: 0 10px 10px -8px #5a85f9;
 }
 
 .Education .Exp-Card:hover {
@@ -72,7 +72,7 @@
     top: 0px;   /* Aligne la boule avec le titre de la carte */
     width: 16px;
     height: 16px;
-    background-color: #DA7C25; /* Couleur de la boule (comme tes dates) */
+    background-color: #5a85f9; /* Couleur de la boule (comme tes dates) */
     border: 3px solid var(--bg-tertiary); /* Contour pour détacher la boule de la ligne */
     border-radius: 50%;
     z-index: 1;
@@ -100,7 +100,6 @@
 }
 
 .company{
-    color: #DA7C25;
     margin-bottom: 10px;
 }
 

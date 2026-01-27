@@ -70,7 +70,7 @@
     display: flex;
     margin-bottom: 20px;
     padding: 5px 5px;
-    background-color: rgb(0, 118, 118);
+    background-color: var(--accent-primary);
     border-radius: 18px;
 }
 
@@ -80,7 +80,7 @@ button[type="submit"] {
     border: none;
     border-radius: 5px;
 
-    background-color: rgb(14, 144, 144);
+    background-color: #5a85f9;
     color: #fff; 
     font-size: 16px;
     font-weight: bold;

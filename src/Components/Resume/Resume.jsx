@@ -23,28 +23,28 @@ const Resume = () => {
                         title={"Software Engineer - Intern "}
                         company={"Hutchinson - France "}
                         description={"Developed a mobile application by building the front-end according to design guidelines and implementing RESTful APIs for the backend. Enhanced and maintained internal software using C#/.NET, including new feature development and bug fixing. Set up CI/CD pipelines to automate testing and deployment while collaborating with business teams to align technical solutions with their needs."}
-                        textColor= {"#DA7C25"}     // texte en noir
+                        textColor= {"#5a85f9"}     // texte en noir
                     />
                     <ExperienceCard
                         date={"April 2024 - July 2024"}
                         title={"Software Tester - Intern"}
                         company={"ANEO - France "}
                         description={"Conducted comprehensive functional and technical analysis for the entire project lifecycle. Designed and implemented robust unit and integration tests to ensure code reliability and quality. Developed and integrated a minimalist library into three dynamic code recompilation tools (Verro, PENE, and Verificarlo). Established a CI pipeline to automate test execution and deployment."}
-                        textColor= {"#DA7C25"} 
+                        textColor= {"#5a85f9"} 
                     />
                     <ExperienceCard
                         date={"May 2023 - August 2022"}
                         title={"Develolper .Net - Intern"}
                         company={"CERIST - Algeria "}
                         description={"Designed and implemented the backend for a national documentary information system. Modeled relational databases and developed secure CRUD functionalities for institution management. Built a multi-criteria search engine and optimized SQL queries for high performance. Established data validation, error handling, and Role-Based Access Control (RBAC)."}
-                        textColor= {"#DA7C25"} 
+                        textColor= {"#5a85f9"} 
                     />
                     <ExperienceCard
                         date={"February 2022 - June 2022"}
                         title={"Full-stack Developer - Intern "}
                         company={"CERIST - Algeria "}
                         description={"Designed the software architecture by modeling the system using UML. Engineered and developed high-performance, maintainable RESTful APIs for the backend. Contributed to frontend feature development. Implemented and optimized an advanced search engine based on Elasticsearch, significantly improving search efficiency and relevance. Collaborated proactively with team members to ensure project quality and consistency."}
-                        textColor= {"#DA7C25"} 
+                        textColor= {"#5a85f9"} 
                     />
                 </div>
             </div>

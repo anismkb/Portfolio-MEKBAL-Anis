@@ -14,6 +14,7 @@
 .title-item{
   text-align: center;
 }
+
 .subtitle {
   font-size: 20px; /* change la taille comme tu veux */
   font-weight: 300; /* optionnel : style plus élégant */
@@ -23,7 +24,7 @@
 .blue-line {
   width: 100px;
   height: 3px;
-  background-color: #2fb4ff;
+  background-color: #5a85f9;
   border: none;
   margin-top: 10px;
   margin-bottom: 20px;

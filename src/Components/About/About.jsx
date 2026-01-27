@@ -189,18 +189,7 @@ const About = () => {
                 )}
             </div>
 
-            <div className="suggested-questions">
-                {suggestedQuestions.map((question, idx) => (
-                <button
-                    key={idx}
-                    className="suggestion-btn"
-                    onClick={() => setInput(question)}
-                    disabled={isLoading}
-                >
-                    {question}
-                </button>
-                ))}
-            </div>
+
 
             <div className="input-area">
                 <textarea
