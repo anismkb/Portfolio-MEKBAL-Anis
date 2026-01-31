@@ -2,11 +2,11 @@ import React from "react";
 import "./Project.css";
 import ProjectCard from "./ProjectCard.jsx";
 import conveydyn from '../../assets/convey.jpg';
-import conveydyn_app from '../../assets/conveydyn.png'
+import conveydyn_app from '../../assets/conveydyn_.png'
 import delevery from '../../assets/delevery_app.png'
 import jeux_xo from '../../assets/jeux_xo.png'
 import godot from '../../assets/godot.png'
-
+import mancala from '../../assets/mancala.png'
 
 const Projet = () => {
   return (
@@ -77,12 +77,13 @@ const Projet = () => {
         />
 
         <ProjectCard 
-          image= {godot}
+          image= {mancala}
           lien={"https://github.com/anismkb/Mancala-Game-"}
           title="Mancala Game"
-          description="Jeu de plateforme 2D avec système de détection de proximité. L'ennemi suit le joueur lorsqu'il entre dans sa zone de détection. Mouvement fluide avec animations directionnelles."
+          description="A Mancala strategy game with AI opponent, built in Python using Pygame. Features intelligent decision-making with the NegaMax algorithm and interactive gameplay."
           items={[
-            { technologie: "Godot" },
+            { technologie: "Python" },
+            { technologie: "Pygame" },
           ]}
         />
       </div>

@@ -45,16 +45,15 @@
     width: 35px;
     height: 35px; 
     border-radius: 50%;
-    border-color: white;
     display: flex;
     justify-content: center; 
     align-items: center;
-    background-color: #111a33;
+    background-color: var(--accent-primary);
     text-decoration: none; 
 }
 
 .icon-circle i {
-    color: #ffffff; 
+    color: var(--icon-clor);
     font-size: 18px; 
     /* couleur de l'icon */
     display: block;
@@ -62,7 +61,12 @@
 
 
 .icon-circle:hover {
-    background-color: #5a85f9;
+    transform: translateY(-6px); /* monte vers le haut */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.icon-circle:hover i {
+    transform: scale(1.1); /* petit zoom optionnel */
 }
 
 .hero img {

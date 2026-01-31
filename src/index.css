@@ -19,8 +19,10 @@
   --text-secondary: #212529;
   --text-muted: #adb5bd;
   --accent-primary: #e0e7fe;
+  --accent-secondary: #788bbf;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   --chatbot-footer-bg: rgba(255, 255, 255, 0.1);
+  --icon-clor: #5a85f9;
 }
 
 [data-theme="dark"] {
@@ -37,8 +39,10 @@
   --text-primary: #f8f9fa;
   --text-secondary: #ced4da;
   --accent-primary: #788bbf;
+  --accent-secondary: #e0e7fe;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   --chatbot-footer-bg: rgba(0, 0, 0, 0.1);
+  --icon-clor: white;
 }
 
 

@@ -83,9 +83,10 @@
 /* Styles appliqués à l'INPUT réel */
 .input input, 
 .input textarea {
+    all: unset;                 /* 🔥 enlève le style natif */
     width: 100%; 
     font-size: 18px;
-    padding: 18px;
+    padding: 16px;
     border-radius: 5px;
     border: 1px solid #ccc; 
     background-color: var(--bg-tertiary);

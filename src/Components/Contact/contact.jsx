@@ -1,7 +1,7 @@
 import React, { useState } from "react"; // Importez useState
 import "./contact.css";
 import { MdSend, MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 
 import L from 'leaflet';

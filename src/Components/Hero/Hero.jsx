@@ -2,7 +2,8 @@ import React from 'react'
 import './Hero.css'
 import ANIS from '../../assets/ANIS.jpg'
 import scroll from '../../assets/scroll.jpg'
-
+import { MdEmail } from "react-icons/md";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 const Hero = () => {
   return (
     <div className='hero'>
