@@ -121,7 +121,7 @@ const Contact = () => {
                         </div>
                         <div className="email">
                             <p> Email </p>
-                            <p> anismekbal2001@gmail.com</p>
+                            <p onClick={()=>window.location.href="mailto:anismekbal2001@gmail.com"}> anismekbal2001@gmail.com</p>
                         </div>
                     </div>
                     <div className="Phone-Item">
@@ -130,7 +130,12 @@ const Contact = () => {
                         </div>
                         <div className="phone">
                             <p> Phone </p>
-                            <p> +33 6 02 56 41 67</p>
+                            <p
+                                className="phone-link"
+                                onClick={() => window.location.href = "tel:+33602564167"}
+                            >
+                                +33 6 02 56 41 67
+                            </p>
                         </div>
                     </div>
 
@@ -140,7 +145,17 @@ const Contact = () => {
                         </div>
                         <div className="location">
                             <p> Location </p>
-                            <p> Brest, France </p>
+                            <p
+                                className="location-link"
+                                onClick={() =>
+                                    window.open(
+                                    "https://www.google.com/maps/search/?api=1&query=Brest,France",
+                                    "_blank"
+                                    )
+                                }
+                            >
+                                Brest, France
+                            </p>
                         </div>
                     </div>
                     <div className="maps" style={{ height: '300px', width: '100%' }}>

@@ -1,19 +1,42 @@
 
 .contact{
-    /* Haut (0), Droite (30px), Bas (30px), Gauche (30px) */
-    padding: 0 30px 30px;
+    padding: 0 50px 30px;
 }
+
+/* Mobile : On passe à 1 colonne */
+@media (max-width: 650px) {
+  .contact{
+    padding: 0 20px 0px;
+  }
+}
+
 .Formcontainer{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 60px;
-    max-width: 1200px;
+    max-width: 1100px;
     justify-items: center;
     margin: 0% auto;
     width: 100%;
     justify-items: stretch;
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+/* petit-ecran-pc : On passe à 3 petite colonnes */
+@media (max-width: 1500px) {
+  .Formcontainer {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+  }
+}
+
+/* Mobile : On passe à 1 colonne */
+@media (max-width: 1024px) {
+  .Formcontainer{
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 700px;
+  }
 }
 
 .references{
@@ -43,6 +66,18 @@
     gap: 5px; 
     margin-bottom: 20px;
     color: var(--text-primary);
+}
+
+.email p:last-child,
+.phone p:last-child,
+.location p:last-child{
+    cursor: pointer;
+}
+
+.email p:last-child:hover,
+.phone p:last-child:hover,
+.location p:last-child:hover{
+    color: #5a85f9;
 }
 
 /* Styles appliqués à l'INPUT réel */
@@ -96,7 +131,7 @@ button[type="submit"] {
 
 
 button[type="submit"]:hover {
-    background-color: rgb(1, 109, 109); 
+    background-color: #265ffb; 
 }
 
 .maps {

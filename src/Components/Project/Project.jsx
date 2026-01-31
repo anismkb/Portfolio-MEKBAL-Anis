@@ -68,8 +68,18 @@ const Projet = () => {
 
         <ProjectCard 
           image= {godot}
-          lien={"https://github.com/anismkb/Recipe_Android_App"}
+          lien={"https://github.com/anismkb/Godot_Project"}
           title="Godot 2D Platformer"
+          description="Jeu de plateforme 2D avec système de détection de proximité. L'ennemi suit le joueur lorsqu'il entre dans sa zone de détection. Mouvement fluide avec animations directionnelles."
+          items={[
+            { technologie: "Godot" },
+          ]}
+        />
+
+        <ProjectCard 
+          image= {godot}
+          lien={"https://github.com/anismkb/Mancala-Game-"}
+          title="Mancala Game"
           description="Jeu de plateforme 2D avec système de détection de proximité. L'ennemi suit le joueur lorsqu'il entre dans sa zone de détection. Mouvement fluide avec animations directionnelles."
           items={[
             { technologie: "Godot" },

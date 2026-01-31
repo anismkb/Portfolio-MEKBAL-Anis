@@ -1,6 +1,6 @@
 
 .project{
-    padding: 0 20px 0px;
+    padding: 0 30px 0px;
 }
 
 .title{
@@ -16,8 +16,8 @@
 }
 
 .subtitle {
-  font-size: 20px; /* change la taille comme tu veux */
-  font-weight: 300; /* optionnel : style plus élégant */
+  font-size: 20px;
+  font-weight: 300; 
   margin-top: 15px;
 }
 
@@ -33,7 +33,6 @@
 
 .projectCards {
   display: grid;
-  /* Par défaut : 3 colonnes de taille égale */
   grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   padding: 20px;
@@ -42,10 +41,33 @@
   justify-items: center;
 }
 
+.card-project {
+  position: relative;
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  width: 100%; 
+  max-width: 350px; /* Elle ne dépassera jamais cette taille */
+  border-radius: 14px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 10px 10px -10px black;
+}
+
+/* petit-ecran-pc : On passe à 3 petite colonnes */
+@media (max-width: 1500px) {
+  .projectCards {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+  }
+}
+
 /* Tablette : On passe à 2 colonnes */
 @media (max-width: 1024px) {
   .projectCards {
     grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
   }
 }
 
@@ -54,22 +76,14 @@
   .projectCards {
     grid-template-columns: 1fr;
   }
+  .card-project{
+    max-width: 100%;
+  }
+  .project{
+    padding: 0 0px 0px;
+  }
 }
 
-
-.card-project {
-  position: relative;
-  background: var(--bg-tertiary);
-  color: var(--text-primary);
-  width: 100%; 
-  max-width: 400px; /* Elle ne dépassera jamais cette taille */
-  border-radius: 14px;
-  padding-bottom: 20px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 10px 10px -10px black;
-}
 
 .card-project:hover {
   box-shadow: 0 12px 10px -10px #4566c0;

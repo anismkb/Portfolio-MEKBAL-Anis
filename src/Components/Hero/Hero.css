@@ -91,7 +91,7 @@
 .hero-connect {
     cursor: pointer;
     border-radius: 50px;
-    background: linear-gradient(267deg, #764ba2 0.36%, #111a33 102.06%); /* violet simple to orange simple */
+    background: linear-gradient(267deg, #764ba2 0.36%, #4362b7 102.06%); /* violet simple to orange simple */
     padding: 10px 20px;
     transition: 0.5s;
 }

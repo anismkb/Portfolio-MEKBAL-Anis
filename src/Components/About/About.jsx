@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import "./About.css";
-import "./CVChatbot.css";
-import ANIS from '../../assets/ANIS.jpg';
 import cvData from '../../Data/cvData.js';
-import { FaLaptopCode, FaMobileAlt, FaDatabase, FaSitemap} from "react-icons/fa";
 
 const About = () => {
     const [messages, setMessages] = useState([
@@ -189,7 +186,18 @@ const About = () => {
                 )}
             </div>
 
-
+            <div className="suggested-questions">
+                {suggestedQuestions.map((question, idx) => (
+                <button
+                    key={idx}
+                    className="suggestion-btn"
+                    onClick={() => setInput(question)}
+                    disabled={isLoading}
+                >
+                    {question}
+                </button>
+                ))}
+            </div>
 
             <div className="input-area">
                 <textarea

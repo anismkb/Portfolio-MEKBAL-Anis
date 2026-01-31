@@ -19,20 +19,7 @@
   --text-secondary: #212529;
   --text-muted: #adb5bd;
   --accent-primary: #e0e7fe;
-  --accent-secondary: #764ba2;
-  --border-color: #dee2e6;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  --card-bg: #ffffff;
-  --input-bg: #ffffff;
-  
-  /* Couleurs spécifiques au chatbot mode clair */
-  --chatbot-bg: linear-gradient(135deg, #f0f2f5 0%, #e3e6ec 100%);
-  --chatbot-header-bg: rgba(255, 255, 255, 0.1);
-  --chatbot-messages-bg: #ffffff;
-  --chatbot-bot-bubble: #f0f0f0;
-  --chatbot-user-bubble: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
-  --chatbot-suggestions-bg: linear-gradient(135deg, #f0f2f5 0%, #e3e6ec 100%);
-  --chatbot-input-bg: #ffffff;
   --chatbot-footer-bg: rgba(255, 255, 255, 0.1);
 }
 
@@ -49,22 +36,8 @@
   --shadow: 0 10px 30px rgba(32, 32, 32, 0.5);
   --text-primary: #f8f9fa;
   --text-secondary: #ced4da;
-  --text-muted: #6c757d;
   --accent-primary: #788bbf;
-  --accent-secondary: #9d7bd9;
-  --border-color: #495057;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  --card-bg: #1e1e1e;
-  --input-bg: #2d2d2d;
-  
-  /* Couleurs spécifiques au chatbot mode sombre */
-  --chatbot-bg: linear-gradient(135deg, #111a33 0%, #764ba2 100%);
-  --chatbot-header-bg: rgba(0, 0, 0, 0.1);
-  --chatbot-messages-bg: #111a33;
-  --chatbot-bot-bubble: #38558f;
-  --chatbot-user-bubble: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  --chatbot-suggestions-bg: linear-gradient(135deg, #111a33 0%, #764ba2 100%);
-  --chatbot-input-bg: #111a33;
   --chatbot-footer-bg: rgba(0, 0, 0, 0.1);
 }
 

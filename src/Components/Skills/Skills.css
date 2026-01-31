@@ -1,6 +1,8 @@
 
 
-
+.skills{
+  padding: 0 30px 0px;
+}
 .title-section{
   display: flex;
   flex-direction: column;
@@ -14,24 +16,52 @@
 
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
-  padding: 40px;
+  padding: 20px;
   max-width: 1000px; /* largeur max du container */
   margin: 0 auto; /* centre horizontalement */
-  align-items: stretch;
-  align-self: center;
   justify-items: center;
 }
 
 .card {
   background: var(--bg-tertiary);
   color: var(--text-secondary);
-  padding: 25px;
-  width: 260px;
+  padding: 20px;
+  width: 100%; 
+  overflow: hidden;
+  max-width: 400px;
   border-radius: 14px;
   box-shadow: 0 0 15px rgba(0,0,0,0.4);
   transition: 0.3s;
+  box-sizing: border-box;
+}
+
+/* petit-ecran-pc : On passe à 3 petite colonnes */
+@media (max-width: 1500px) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1000px;
+  }
+}
+
+/* Tablette : On passe à 2 colonnes */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 700px;
+  }
+}
+
+/* Mobile : On passe à 1 colonne */
+@media (max-width: 650px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills{
+    padding: 0 00px 0px;
+  }
 }
 
 .card:hover {
