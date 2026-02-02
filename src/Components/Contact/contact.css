@@ -80,10 +80,9 @@
     color: #5a85f9;
 }
 
-/* Styles appliqués à l'INPUT réel */
 .input input, 
 .input textarea {
-    all: unset;                 /* 🔥 enlève le style natif */
+    all: unset;           
     width: 100%; 
     font-size: 18px;
     padding: 16px;
@@ -91,7 +90,7 @@
     border: 1px solid #ccc; 
     background-color: var(--bg-tertiary);
     box-sizing: border-box; 
-    color: var(--text-primary); /* ou une autre couleur claire */
+    color: var(--text-primary); 
     outline: none; 
 }
 
@@ -108,6 +107,12 @@
     padding: 5px 5px;
     background-color: var(--accent-primary);
     border-radius: 18px;
+}
+
+.icon-email svg,
+.icon-phone svg,
+.icon-location svg {
+    color: var(--icon-clor);  
 }
 
 button[type="submit"] {
@@ -151,18 +156,17 @@ button[type="submit"]:hover {
     z-index: 500;
 
     padding: 5px 10px;
-    background-color: rgba(255, 255, 255, 0.9); /* Fond blanc semi-transparent */
-    color: #0834e8; /* Texte sombre */
+    background-color: rgba(255, 255, 255, 0.9); 
+    color: #0834e8; 
     font-size: 12px;
     border-radius: 3px;
-    text-decoration: none; /* Retirer le soulignement par défaut du lien */
+    text-decoration: none; 
     cursor: pointer;
 
-    /* Effet au survol */
     transition: background-color 0.2s;
 }
 
 .map-expand-button:hover {
     text-decoration: underline;
-    background-color: #fff; /* Le fond devient complètement blanc au survol */
+    background-color: #fff; 
 }

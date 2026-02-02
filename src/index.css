@@ -1,4 +1,4 @@
-/* src/index.css */
+
 * {
   margin: 0;
   padding: 0;
@@ -6,11 +6,10 @@
 }
 
 :root {
-  /* Variables mode clair */
   --bg-primary: #ffffff;
   --bg-secondary: #eaeaea;
   --bg-tertiary: #ffffff;
-  --bg-techno:rgb(187, 187, 187);
+  --bg-techno:rgb(228, 228, 228);
   --bg-year: #727ea1;
   --bg-navbar: rgba(255, 255, 255, 0.95);
   --bg-mssg: #bccef3;
@@ -19,14 +18,12 @@
   --text-secondary: #212529;
   --text-muted: #adb5bd;
   --accent-primary: #e0e7fe;
-  --accent-secondary: #788bbf;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   --chatbot-footer-bg: rgba(255, 255, 255, 0.1);
   --icon-clor: #5a85f9;
 }
 
 [data-theme="dark"] {
-  /* Variables mode sombre */
   --bg-primary: #000000;
   --bg-secondary: #0a1124;
   --bg-tertiary: #111a33;
@@ -39,7 +36,6 @@
   --text-primary: #f8f9fa;
   --text-secondary: #ced4da;
   --accent-primary: #788bbf;
-  --accent-secondary: #e0e7fe;
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   --chatbot-footer-bg: rgba(0, 0, 0, 0.1);
   --icon-clor: white;

@@ -1,4 +1,3 @@
-/* src/components/ThemeToggle.css */
 .theme-toggle {
   
   display: flex;
@@ -14,7 +13,6 @@
   font-weight: 500;
   transition: all 0.3s ease;
   
-  /* Thème clair */
   background: #f0f0f0;
   color: #333;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -29,7 +27,6 @@
   font-size: 18px;
 }
 
-/* Thème sombre */
 [data-theme="dark"] .theme-toggle {
   background: #333;
   color: #f0f0f0;

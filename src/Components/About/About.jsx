@@ -100,8 +100,8 @@ const About = () => {
                     }]
                 }],
                 generationConfig: {
-                    maxOutputTokens: 700,  // Limite la longueur
-                    temperature: 0.4,      // Créativité (0-1)
+                    maxOutputTokens: 700, 
+                    temperature: 0.4,    
                     topP: 0.8,
                     topK: 40
                 }
@@ -149,8 +149,8 @@ const About = () => {
     };
 
     const suggestedQuestions = [
-        "Quelle est ton expérience professionnelle ?",
-        "Comment puis-je te contacter ?"
+        "What is your professional experience ?",
+        "How can I contact you ?"
     ];
 
   return (
@@ -213,7 +213,7 @@ const About = () => {
                     disabled={isLoading || !input.trim()}
                     className="send-btn"
                 >
-                {isLoading ? '...' : 'Envoyer'}
+                {isLoading ? '...' : 'Send'}
                 </button>
             </div>
 

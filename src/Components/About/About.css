@@ -13,7 +13,6 @@
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-/* Mobile : On passe à 1 colonne */
 @media (max-width: 1024px) {
 
   .cv-chatbot{
@@ -21,7 +20,6 @@
   }
 }
 
-/* Mobile : On passe à 1 colonne */
 @media (max-width: 650px) {
   .about{
     padding: 0px 20px 0px;
@@ -85,8 +83,7 @@
   background: var(--bg-mssg);
   color: var(--text-primary);
   border-bottom-left-radius: 5px;
-  text-align: left;           /* Alignement à gauche */
-
+  text-align: left; 
 }
 
 .typing {
@@ -201,7 +198,6 @@
   font-size: 0.8rem;
 }
 
-/* Scrollbar personnalisée */
 .messages-container::-webkit-scrollbar {
   width: 6px;
 }

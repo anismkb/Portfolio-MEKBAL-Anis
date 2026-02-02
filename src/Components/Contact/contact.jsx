@@ -31,23 +31,21 @@ const Contact = () => {
         const form = e.target;
         const data = new FormData(form);
 
-        setStatus("Sending..."); // Afficher le statut d'envoi
+        setStatus("Sending..."); 
 
         try {
             const response = await fetch(formActionUrl, {
                 method: form.method,
                 body: data,
                 headers: {
-                    // C'est la clé pour que Formspree réponde avec JSON
                     'Accept': 'application/json' 
                 }
             });
 
             if (response.ok) {
                 setStatus("Message sent successfully! Thank you!");
-                form.reset(); // Efface les champs après un succès
+                form.reset(); 
             } else {
-                // Tenter de lire le message d'erreur de Formspree si disponible
                 const result = await response.json();
                 if (result.errors) {
                     setStatus(result.errors.map(err => err.message).join(", "));
