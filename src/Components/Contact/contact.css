@@ -82,7 +82,8 @@
 
 .input input, 
 .input textarea {
-    all: unset;           
+    all: unset;    
+    display: block;       
     width: 100%; 
     font-size: 18px;
     padding: 16px;

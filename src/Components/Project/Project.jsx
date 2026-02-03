@@ -22,7 +22,7 @@ const Projet = () => {
           image= {conveydyn_app}
           lien={"https://play.google.com/store/apps/details?id=com.hutchinson.conveydyn_wizard&hl=fr"}
           title="Conveydyn Wizard"
-          description="It is used to help with the sizing of a Conveydyn® belt for roller conveyors — whether straight or curved conveyors."
+          description="Mobile App for Hutchinson company, it's used to help with the sizing of a Conveydyn® belt for roller conveyors whether straight or curved conveyors."
           items={[
             { technologie: "Flutter" },
             { technologie: "Dart" },
