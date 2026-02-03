@@ -7,6 +7,7 @@ import delevery from '../../assets/delevery_app.png'
 import jeux_xo from '../../assets/jeux_xo.png'
 import godot from '../../assets/godot.png'
 import mancala from '../../assets/mancala.png'
+import recipe_app from '../../assets/recipe_app.png'
 
 const Projet = () => {
   return (
@@ -35,11 +36,23 @@ const Projet = () => {
           image= {delevery}
           lien={"https://github.com/anismkb/Food_delivery_Flutter_App"}
           title="Food Delivery App"
-          description="Application mobile de food delivery incluant la navigation entre restaurants, le choix des repas, la gestion du panier et l’intégration d’un module de paiement. Conçue avec une architecture propre et une interface moderne."
+          description="Mobile food delivery application featuring restaurant browsing, meal selection, cart management, and payment module integration. Designed with a clean architecture and a modern user interface."
           items={[
             { technologie: "Flutter" },
             { technologie: "Dart" },
             { technologie: "Firebase" },
+          ]}
+        />
+        
+        <ProjectCard 
+          image= {recipe_app}
+          lien={"https://github.com/anismkb/Recipe_Android_App"}
+          title="Recipe App"
+          description="An Android application that allows users to browse, search, and discover a wide variety of recipes. Users can easily find recipes by name or ingredients and save their favorite ones for quick access."
+          items={[
+            { technologie: "Kotlin" },
+            { technologie: "API Rest" },
+            { technologie: "Android Studio" },
           ]}
         />
 
@@ -53,24 +66,12 @@ const Projet = () => {
             { technologie: "Android Studio" },
           ]}
         />
-        
-        <ProjectCard 
-          image= {conveydyn}
-          lien={"https://github.com/anismkb/Recipe_Android_App"}
-          title="Recipe App"
-          description="Android Tic-Tac-Toe app featuring dynamic 3x3 and 4x4 board generation, optimized game logic, responsive UI, and smooth player interactions."
-          items={[
-            { technologie: "Kotlin" },
-            { technologie: "API Rest" },
-            { technologie: "Android Studio" },
-          ]}
-        />
 
         <ProjectCard 
           image= {godot}
           lien={"https://github.com/anismkb/Godot_Project"}
           title="Godot 2D Platformer"
-          description="Jeu de plateforme 2D avec système de détection de proximité. L'ennemi suit le joueur lorsqu'il entre dans sa zone de détection. Mouvement fluide avec animations directionnelles."
+          description="2D platformer game featuring a proximity detection system where enemies follow the player upon entering their detection zone. Smooth movement with directional animations."
           items={[
             { technologie: "Godot" },
           ]}

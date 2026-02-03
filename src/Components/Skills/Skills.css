@@ -10,8 +10,8 @@
 }
 
 .subtitle {
-  font-size: 20px; /* change la taille comme tu veux */
-  font-weight: 300; /* optionnel : style plus élégant */
+  font-size: 20px; 
+  font-weight: 300; 
 }
 
 .container {
@@ -19,8 +19,8 @@
   grid-template-columns: repeat(3, 1fr); 
   gap: 30px;
   padding: 20px;
-  max-width: 1000px; /* largeur max du container */
-  margin: 0 auto; /* centre horizontalement */
+  max-width: 1000px; 
+  margin: 0 auto;
   justify-items: center;
 }
 
@@ -37,7 +37,6 @@
   box-sizing: border-box;
 }
 
-/* petit-ecran-pc : On passe à 3 petite colonnes */
 @media (max-width: 1500px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -45,7 +44,6 @@
   }
 }
 
-/* Tablette : On passe à 2 colonnes */
 @media (max-width: 1024px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -53,7 +51,6 @@
   }
 }
 
-/* Mobile : On passe à 1 colonne */
 @media (max-width: 650px) {
   .container {
     grid-template-columns: repeat(2, 1fr);
@@ -86,12 +83,14 @@
   padding: 5px;
   gap: 10px;
   font-size: 17px;
+  border-radius: 10px;
 }
 
 .item:hover {
+  cursor: pointer;
   padding: 5px;
   border-radius: 10px;
-  background-color: #6180d6;
+  background-color: var(--bg-item-hover);
 }
 
 .icon {

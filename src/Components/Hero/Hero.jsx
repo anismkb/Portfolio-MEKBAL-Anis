@@ -13,7 +13,6 @@ const Hero = () => {
     return () => clearTimeout(timer)
   }, [])
 
-  // Si pas encore monté, afficher les éléments invisibles
   if (!mounted) {
     return (
       <div className='hero'>
@@ -42,7 +41,6 @@ const Hero = () => {
     )
   }
 
-  // Une fois monté, ajouter les event listeners
   return (
     <div className='hero'>
         <p className='hello hero-animate'> Hello, I'm</p>
