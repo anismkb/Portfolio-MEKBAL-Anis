@@ -8,11 +8,14 @@ import jeux_xo from '../../assets/jeux_xo.png'
 import godot from '../../assets/godot.png'
 import mancala from '../../assets/mancala.png'
 import recipe_app from '../../assets/recipe_app.png'
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 const Projet = () => {
+  const {ref, visible} = useScrollAnimation();
+
   return (
-    <div className="project">
-      <div className="title">
+    <div className="project" ref={ref}>
+      <div className={`title scroll-title ${visible ? "show":""}`}>
         <h1>Projects</h1>
         <p className="subtitle">My recents projects</p>
         <hr className="blue-line" />
@@ -30,18 +33,22 @@ const Projet = () => {
             { technologie: "SQL Server" },
             { technologie: "XCode" },
           ]}
+          delay={0}
+          visible={visible}
         />
 
         <ProjectCard 
           image= {delevery}
           lien={"https://github.com/anismkb/Food_delivery_Flutter_App"}
           title="Food Delivery App"
-          description="Mobile food delivery application featuring restaurant browsing, meal selection, cart management, and payment module integration. Designed with a clean architecture and a modern user interface."
+          description="Mobile food delivery application featuring restaurant browsing, meal selection, cart management, and payment module integration. Designed with a modern user interface."
           items={[
             { technologie: "Flutter" },
             { technologie: "Dart" },
             { technologie: "Firebase" },
           ]}
+          delay={1}
+          visible={visible}
         />
         
         <ProjectCard 
@@ -54,6 +61,8 @@ const Projet = () => {
             { technologie: "API Rest" },
             { technologie: "Android Studio" },
           ]}
+          delay={2}
+          visible={visible}
         />
 
         <ProjectCard 
@@ -65,6 +74,8 @@ const Projet = () => {
             { technologie: "Java" },
             { technologie: "Android Studio" },
           ]}
+          delay={3}
+          visible={visible}
         />
 
         <ProjectCard 
@@ -75,6 +86,8 @@ const Projet = () => {
           items={[
             { technologie: "Godot" },
           ]}
+          delay={4}
+          visible={visible}
         />
 
         <ProjectCard 
@@ -86,6 +99,8 @@ const Projet = () => {
             { technologie: "Python" },
             { technologie: "Pygame" },
           ]}
+          delay={5}
+          visible={visible}
         />
       </div>
     </div>

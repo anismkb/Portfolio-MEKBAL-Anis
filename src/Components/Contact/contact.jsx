@@ -3,11 +3,11 @@ import "./contact.css";
 import { MdSend, MdEmail, MdPhone, MdLocationOn } from "react-icons/md";
 import { MapContainer, TileLayer } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
-
 import L from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconRetina from 'leaflet/dist/images/marker-icon-2x.png';
 import shadow from 'leaflet/dist/images/marker-shadow.png';
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 let DefaultIcon = L.icon({
     iconRetinaUrl: iconRetina,
@@ -20,14 +20,13 @@ L.Marker.prototype.options.icon = DefaultIcon;
 const googleMapsUrl = "https://www.google.fr/maps/place/Brest/@48.4084422,-4.4995852,12z/data=!3m1!4b1!4m6!3m5!1s0x4816bbe1d9925b93:0xc6488358179c30ab!8m2!3d48.3899275!4d-4.4855959!16zL20vMGZ3Zm0?entry=ttu&g_ep=EgoyMDI1MTIwMi4wIKXMDSoASAFQAw%3D%3D";
 const formActionUrl = "https://formspree.io/f/xvgejkel";
 
-// Mon composant est une fonction qui utilise des Hooks
 const Contact = () => {
-    const [status, setStatus] = useState(""); // État pour le message de statut (envoi/succès/erreur)
+    const { ref, visible } = useScrollAnimation(); 
+    const [status, setStatus] = useState("");
 
     const handleSubmit = async (e) => {
-        e.preventDefault(); // Empêche la soumission classique (et la redirection)
+        e.preventDefault();
 
-        // Récupère l'élément du formulaire et les données
         const form = e.target;
         const data = new FormData(form);
 
@@ -61,8 +60,8 @@ const Contact = () => {
 
 
     return (
-        <div className="contact">
-            <div className="title">
+        <div className="contact" ref={ref}>
+            <div className={`title scroll-title ${visible ? "show":""}`}>
                 <h1> Contact </h1>
                 <p className="subtitle"> Feel free to reach out </p>
                 <hr className="blue-line" />

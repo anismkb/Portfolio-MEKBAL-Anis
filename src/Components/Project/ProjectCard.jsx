@@ -1,8 +1,10 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
-export default function ProjectCard({ image, lien, title, description, items }) {
+export default function ProjectCard({ image, lien, title, description, items, delay, visible }) {
   return (
-    <div className="card-project">
+    <div className={`card-project ${visible ? "show" : ""}`}
+        style={{ transitionDelay: `${delay * 70}ms` }}
+    >
       <img src={image} alt={title} />
 
       <div className="overlay">

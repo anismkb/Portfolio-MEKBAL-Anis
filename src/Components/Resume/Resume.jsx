@@ -3,11 +3,13 @@ import "./Resume.css";
 import ExperienceCard from "./ExperienceCard";
 import { FaBriefcase } from "react-icons/fa";
 import { FaGraduationCap } from "react-icons/fa";
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 const Resume = () => {
+  const {ref, visible} = useScrollAnimation();
   return (
-    <div className="resume">
-        <div className="title">
+    <div className="resume" ref={ref}>
+        <div className={`title scroll-title ${visible ? "show":""}`}>
             <h1> Resume </h1>
             <p className="subtitle"> My journey </p>
             <hr className="blue-line" />
@@ -22,7 +24,7 @@ const Resume = () => {
                         date={"April 2025 - September 2025"}
                         title={"Software Engineer - Intern "}
                         company={"Hutchinson - France "}
-                        description={"Developed a mobile application by building the front-end according to design guidelines and implementing RESTful APIs for the backend. Enhanced and maintained internal software using C#/.NET, including new feature development and bug fixing. Set up CI/CD pipelines to automate testing and deployment while collaborating with business teams to align technical solutions with their needs."}
+                        description={"Developed a mobile application by building the front-end according to design guidelines and implementing RESTful APIs for the backend. Enhanced and maintained internal software using C#/.NET, including new feature development and bug fixing. Set up CI/CD pipelines to automate testing and deployment."}
                         textColor= {"#5a85f9"}     // texte en noir
                     />
                     <ExperienceCard
@@ -57,7 +59,7 @@ const Resume = () => {
                         date={"2023 - 2025"}
                         title={" Master's in computer science, software for embedded systems "}
                         company={"Université de Bretagne Occidentale - Brest "}
-                        description={"Focused on developing high-reliability software for real-time and resource-constrained environments. Key areas included low-level programming (C/C++), IOT, mobile development and ensuring system security and performance optimization for critical applications."}
+                        description={"Focus on developing high-reliability software for real-time and resource-constrained environments. Key areas included low-level programming (C/C++), IOT, mobile development and ensuring system security and performance optimization for critical applications."}
                         textColor= {" #b923e1"} 
                     />
                     <ExperienceCard

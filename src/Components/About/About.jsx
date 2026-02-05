@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import "./About.css";
 import cvData from '../../Data/cvData.js';
+import useScrollAnimation from "../../hooks/useScrollAnimation";
 
 const About = () => {
+
+    const { ref, visible } = useScrollAnimation();
     const [messages, setMessages] = useState([
         { id: 1, text: "Hey there! I’m Anis AI assistant 👨‍💻, here to help you learn more about his work, skills, and projects. Ask me anything!", sender: 'bot' }
     ]);
@@ -154,15 +157,14 @@ const About = () => {
     ];
 
   return (
-    <div className='about'>
-        <div className="title">
+    <div className='about' ref={ref}>
+        <div className={`title scroll-title ${visible ? "show":""}`}>
             <h1> About me </h1>
             <p className="subtitle">Quick review</p>
             <hr className="blue-line" />
         </div>
         
-        {/* new */}
-        <div className="cv-chatbot">
+        <div className={`cv-chatbot ${visible ? "show" : ""}`}>
             <div className="chat-header">
                 <h3>🤖 Ask My AI Assistance</h3>
             </div>

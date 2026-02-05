@@ -53,6 +53,14 @@
   display: flex;
   flex-direction: column;
   box-shadow: 0 10px 10px -10px black;
+  opacity: 0;
+  transform: translateY(30px);
+  transition:  opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card-project.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 1500px) {

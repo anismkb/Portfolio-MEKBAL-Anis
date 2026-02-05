@@ -1,6 +1,9 @@
-export default function SkillCard({ title, items }) {
+export default function SkillCard({ title, items, delay, visible }) {
   return (
-    <div className="card">
+    <div
+      className={`card ${visible ? "show" : ""}`}
+      style={{ transitionDelay: `${delay * 70}ms` }}
+    >
       <h2>{title}</h2>
       <div className="items">
         {items.map((i, index) => (
