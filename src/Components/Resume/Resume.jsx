@@ -16,16 +16,16 @@ const Resume = () => {
         </div>
         <div className="content">
             <div className="Experience">
-                <h1 className="titleSectionExperience">
+                <h1 className={`titleSectionExperience ${visible ? "show":""}`}>
                     <FaBriefcase className="icon" /> Experience
                 </h1>
-                <div className="timeline-container">
+                <div className={`timeline-container ${visible ? "show":""}`}>
                     <ExperienceCard
                         date={"April 2025 - September 2025"}
                         title={"Software Engineer - Intern "}
                         company={"Hutchinson - France "}
                         description={"Developed a mobile application by building the front-end according to design guidelines and implementing RESTful APIs for the backend. Enhanced and maintained internal software using C#/.NET, including new feature development and bug fixing. Set up CI/CD pipelines to automate testing and deployment."}
-                        textColor= {"#5a85f9"}     // texte en noir
+                        textColor= {"#5a85f9"}
                     />
                     <ExperienceCard
                         date={"April 2024 - July 2024"}
@@ -51,10 +51,10 @@ const Resume = () => {
                 </div>
             </div>
             <div className="Education">
-                <h1 className="titleSectionEducation">
+                <h1 className={`titleSectionEducation ${visible ? "show":""}`}>
                     <FaGraduationCap className="icon" /> Education
                 </h1>
-                <div className="timeline-container">
+                <div className={`timeline-container ${visible ? "show":""}`}>
                     <ExperienceCard
                         date={"2023 - 2025"}
                         title={" Master's in computer science, software for embedded systems "}

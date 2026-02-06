@@ -45,6 +45,17 @@
   transform: translateY(0);
 }
 
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #4566c0;
+}
+
+.card.show:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #4566c0;
+  transition: none;
+}
+
 @media (max-width: 1500px) {
   .container {
     grid-template-columns: repeat(3, 1fr);
@@ -69,10 +80,7 @@
   }
 }
 
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 15px #4566c0;
-}
+
 
 .card h2 {  
   color: #5a85f9;

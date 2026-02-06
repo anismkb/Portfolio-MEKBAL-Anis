@@ -55,12 +55,23 @@
   box-shadow: 0 10px 10px -10px black;
   opacity: 0;
   transform: translateY(30px);
-  transition:  opacity 0.6s ease, transform 0.6s ease;
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card-project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 10px -10px #4566c0;
 }
 
 .card-project.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.card-project.show:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 10px -10px #4566c0;
+  transition: none;
 }
 
 @media (max-width: 1500px) {
@@ -87,12 +98,6 @@
   .project{
     padding: 0 0px 0px;
   }
-}
-
-
-.card-project:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 10px -10px #4566c0;
 }
 
 .card-project:hover img {

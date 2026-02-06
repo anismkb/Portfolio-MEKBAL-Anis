@@ -67,7 +67,7 @@ const Contact = () => {
                 <hr className="blue-line" />
             </div>
             <div className="Formcontainer">
-                <div className="contactform">
+                <div className={`contactform ${visible ? "show":""}`}>
                     <form onSubmit={handleSubmit} method="post">
                         <div className="form">
                             <div className="name">
@@ -110,7 +110,7 @@ const Contact = () => {
                     </form>
                 </div>
                 
-                <div className="references">
+                <div className={`references ${visible ? "show":""}`}>
                     <h2 className="titleRef"> Get In Touch </h2>
                     <div className="Email-Item">
                         <div className="icon-email">
