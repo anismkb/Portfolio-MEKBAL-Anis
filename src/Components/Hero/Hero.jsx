@@ -69,7 +69,7 @@ const Hero = () => {
           <a href="mailto:anismekbal2001@gmail.com" className="icon-circle"><i className="fas fa-envelope"></i></a>
         </div>
         <div 
-          className='scroll-down hero-animate'
+          className='scroll-down'
           onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
         >
           <p className='label'>Scroll Down </p>

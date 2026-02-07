@@ -57,7 +57,7 @@ section {
 /* animation titre au scroll */
 .scroll-title {
   opacity: 0;
-  transform: translateY(30px);
+  transform: translateY(40px);
   transition: all 0.8s ease;
 }
 
