@@ -47,7 +47,6 @@ function App() {
     <>
       <ThemeProvider>
         <Navbar active={active} scrollToSection={scrollToSection} />
-        <ThemeToggle />
         <section id="home"><Hero /></section>
         <section id="about"><About /></section>
         <section id="skills"><Skills /></section>
