@@ -179,15 +179,15 @@
 }
 
 .full {
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 
 .job {
-  animation-delay: 0.5s;
+  animation-delay: 0.7s;
 }
 
 .presentation {
-  animation-delay: 0.7s;
+  animation-delay: 1.0s;
 }
 
 .hero-button {

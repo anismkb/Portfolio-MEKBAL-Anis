@@ -21,6 +21,17 @@
   transform: translateY(0);
 }
 
+.chat-header h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chat-icon {
+  font-size: 32px;
+  color: white; /* même couleur que ton thème */
+}
+
 @media (max-width: 1024px) {
 
   .cv-chatbot{

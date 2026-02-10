@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./About.css";
 import cvData from '../../Data/cvData.js';
 import useScrollAnimation from "../../hooks/useScrollAnimation";
-
+import { FaRobot } from "react-icons/fa";
 const About = () => {
 
     const { ref, visible } = useScrollAnimation();
@@ -71,64 +71,23 @@ const About = () => {
         setIsLoading(true);
 
         try {
-            const response = await fetch(
-            `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${import.meta.env.VITE_GEMINI_KEY}`,
-            {
-                method: 'POST',
-                headers: { 
-                'Content-Type': 'application/json' 
-                },
+            const response = await fetch("/api/chat", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({
-                contents: [{
-                    parts: [{ 
-                    text: `Tu es un assistant professionnel qui répond aux questions sur le CV de Anis Mekbal.
-                    
-                    CONTEXTE DU CV:
-                    ${cvText}
-                    
-                    QUESTION DU RECRUTEUR: ${userQuestion}
-                    
-                    RÈGLES DE RÉPONSE:
-                    1. Réponds UNIQUEMENT basé sur les informations du CV
-                    2. Sois précis et concis
-                    3. Utilise un français professionnel
-                    4. Réponds en français
-                    5. Si l'information n'est pas dans le CV, dis que tu ne sais pas
-                    6. Utilise des puces simples "•" pour les listes si nécessaire
-                    7. Va à la ligne naturellement entre les paragraphes
-                    8. Sois concis et précis
-                    
-                    
-                    RÉPONSE PROFESSIONNELLE:`
-                    }]
-                }],
-                generationConfig: {
-                    maxOutputTokens: 700, 
-                    temperature: 0.4,    
-                    topP: 0.8,
-                    topK: 40
-                }
-                })
-            }
-            );
+                    message: userQuestion,
+                    cvText: cvText
+                }),
+            });
 
             const data = await response.json();
-            
-            console.log('Réponse Gemini 2.5:', data); // Pour déboguer
-            
-            let botResponse = "Désolé, je n'ai pas pu générer une réponse.";
-            
-            if (data.candidates && data.candidates[0] && data.candidates[0].content) {
-            botResponse = data.candidates[0].content.parts[0].text;
-            } else if (data.error) {
-            botResponse = `Erreur: ${data.error.message}`;
-            }
-            
-            const botMessage = { 
-            id: messages.length + 2, 
-            text: botResponse, 
-            sender: 'bot' 
+
+            const botMessage = {
+            id: messages.length + 2,
+            text: data.reply,
+            sender: 'bot'
             };
+            
             setMessages(prev => [...prev, botMessage]);
             
         } catch (error) {
@@ -166,7 +125,10 @@ const About = () => {
         
         <div className={`cv-chatbot ${visible ? "show" : ""}`}>
             <div className="chat-header">
-                <h3>🤖 Ask My AI Assistance</h3>
+                <h3>
+                    <FaRobot className="chat-icon" />
+                    Ask My AI Assistance
+                </h3>
             </div>
 
             <div className="messages-container">

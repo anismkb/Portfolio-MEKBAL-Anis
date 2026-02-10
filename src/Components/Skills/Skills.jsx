@@ -3,7 +3,7 @@ import "./Skills.css";
 import SkillCard from "./SkillCard";
 import html from "../../assets/html5.png";
 import css from "../../assets/css-3.png";
-import asp from "../../assets/.net.png";
+import asp from "../../assets/net.png";
 import mysql from "../../assets/mysql.png";
 import php from "../../assets/php.png";
 import postgeresql from "../../assets/postgres.png";

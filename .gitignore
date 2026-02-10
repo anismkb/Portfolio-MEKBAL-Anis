@@ -24,3 +24,5 @@ dist-ssr
 *.sw?
 
 .env
+.dist/assets/index-CgLT1vm4.js
+.vercel
