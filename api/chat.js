@@ -25,6 +25,7 @@ export default async function handler(req, res) {
               RÈGLES:
               - Réponds uniquement à partir du CV
               - Englais professionnel
+              - Saute la ligne apres chaque expérience
               - Réponse concise
               - Si info absente → dis-le clairement
 

@@ -7,7 +7,7 @@ const About = () => {
 
     const { ref, visible } = useScrollAnimation();
     const [messages, setMessages] = useState([
-        { id: 1, text: "Hey there! I’m Anis AI assistant 👨‍💻, here to help you learn more about his work, skills, and projects. Ask me anything!", sender: 'bot' }
+        { id: 1, text: "Hey there! I’m Anis AI assistant, here to help you learn more about his work, skills, and projects. Ask me anything!", sender: 'bot' }
     ]);
     const [input, setInput] = useState('');
     const [isLoading, setIsLoading] = useState(false);
