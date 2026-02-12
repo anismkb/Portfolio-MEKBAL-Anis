@@ -24,14 +24,14 @@ export default async function handler(req, res) {
 
               RÈGLES:
               - Réponds uniquement à partir du CV
-              - Français professionnel
+              - Englais professionnel
               - Réponse concise
               - Si info absente → dis-le clairement
 
               RÉPONSE:`}]
           }],
           generationConfig: {
-            maxOutputTokens: 700,
+            maxOutputTokens: 1000,
             temperature: 0.4,
             topP: 0.8,
             topK: 40
@@ -40,9 +40,8 @@ export default async function handler(req, res) {
       }
     );
 
-    console.log("Réponse Gemini brute:", data);
-
     const data = await response.json();
+    console.log("Réponse Gemini brute:", data);
 
     res.status(200).json({
       reply: data.candidates?.[0]?.content?.parts?.[0]?.text

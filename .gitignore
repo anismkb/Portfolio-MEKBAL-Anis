@@ -26,3 +26,4 @@ dist-ssr
 .env.local
 .dist/assets/index-CgLT1vm4.js
 .vercel
+.env*.local
