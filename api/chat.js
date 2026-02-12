@@ -4,8 +4,8 @@ export default async function handler(req, res) {
   }
 
   try {
-    const { message, cvText } = req.body;
-
+    const { message, cvText } = req.body; 
+    console.log("Message reçu:", req.body);
     const response = await fetch(
       `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${process.env.GEMINI_API_KEY}`,
       {
@@ -39,6 +39,8 @@ export default async function handler(req, res) {
         })
       }
     );
+
+    console.log("Réponse Gemini brute:", data);
 
     const data = await response.json();
 
